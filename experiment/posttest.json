@@ -1,39 +1,10 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[{"question":"KVL is related to -","answers":{"a":"Junction current","b":"Battery e.m.fs","c":"IR Drop","d":"Both B & C"},"correctAnswer":"d"},
+{"question":"According to Kirchhoff’s voltage law, the algebraic some of all IR drops and e.m.fs. in any closed of a network is always -","answers":{"a":"Negative","b":"Positive","c":"Determined by battery e.m.fs.","d":"Zero"},"correctAnswer":"d"},
+{"question":"Kirchhoff’s law valid for -","answers":{"a":"Linear circuit only","b":"Passive time invariant circuits","c":"Nonlinear circuits only","d":"Both linear and nonlinear circuits only"},"correctAnswer":"d"},
+{"question":"Mesh analysis is based on -","answers":{"a":"Kirchhoff’s voltage law","b":"Kirchhoff’s current law","c":"Law of conservation of momentum","d":"Law of conservation of energy"},"correctAnswer":"a"},
+{"question":"A super mesh is created if -","answers":{"a":"A voltage source is common to two loops","b":"A current source is common to two loops","c":"A current source is common to two nodes","d":"A voltage source is common to two nodes"},"correctAnswer":"b"},
+{"question":"What is the internal resistance of voltage source and voltmeter?","answers":{"a":"Zero, infinity","b":"Infinity, zero","c":"Zero, infinity","d":"Zero, zero"},"correctAnswer":"a"},
+{"question":"What is reading of voltmeter? ","answers":{"a":"2V","b":"1V","c":"0.5V","d":"0V"},"correctAnswer":"d"},
+{"question":"Connetion of voltmeter and ammeter in any circuit -","answers":{"a":"Shunt and series with resistance","b":"Series and shunt with resistance","c":"Both are in series","d":"Both are in shunt"},"correctAnswer":"a"},
+{"question":"Current I=? ","answers":{"a":"-0.5A","b":"0.5A","c":"-0.2","d":"0.2A"},"correctAnswer":"a"},
+{"question":"What is the voltage across 5ohm resistor if current source has current 17/3 A ?","answers":{"a":"2.23A","b":"5.31A","c":"2.32A","d":"8.96A"},"correctAnswer":"c"}]
