@@ -136,6 +136,13 @@ window.onload = function fix() {
     document.body.style.zoom = "89%";
 }
 
+reset.onclick = function reset_conn(){
+    window.location.reload()
+}
+
+add.disabled=true;
+
+
 function numOfConn(node){
     return instance.getConnections({ source:node }).length + instance.getConnections({ target:node }).length
 }
@@ -471,11 +478,6 @@ plot.onclick = function plotVal() {
 prnt.onclick = function prntScr() {
     window.print()
 }
-
-reset.onclick = function reset_conn(){
-    window.location.reload()
-}
-
 
  /* function highlight() {
     
