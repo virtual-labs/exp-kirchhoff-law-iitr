@@ -1,3 +1,4 @@
+
 var cont = document.getElementById("container")
 
 var ps = document.getElementById("pow-start")
@@ -46,6 +47,8 @@ var cv3p = document.getElementById("c-v3p")
 var cv3n = document.getElementById("c-v3n")
 
 var steps = document.getElementById("steps")
+
+
 
 var index = 1
 var voltageVal = []
@@ -139,6 +142,8 @@ reset.onclick = function reset_conn(){
     window.location.reload()
 }
 
+add.disabled=true
+
 check.onclick = function MyCheck() {
 
     flags3 = 1;
@@ -226,6 +231,7 @@ check.onclick = function MyCheck() {
     }
 
     if ((arrChk.length == 8) && (instance.getAllConnections().length == 8)) {
+
         window.alert("Right connections! Please choose the resistance values")
 
         if (voltageVal.length == 0) {
@@ -239,10 +245,14 @@ check.onclick = function MyCheck() {
     }
 
     else if (arrChk.length == 0) {
+        
         window.alert("Please make connections")
+        
+        
     }
 
     else {
+
         window.alert("Invalid connections!")
         window.location.reload()
     }
@@ -253,12 +263,15 @@ ps.onclick = function toggle() {
     flags5 = 1;
 
     if (state == 0) {
+
         document.getElementById('power-supply').src = 'images/PowerSupplyOn.png'
         PSval.disabled = false;
         PSdis.disabled = false;
         state = 1;
     }
+
     else if (state == 1) {
+
         document.getElementById('power-supply').src = 'images/PowerSupplyOff.png'
         PSval.disabled = true;
         PSdis.disabled = true;
@@ -475,6 +488,13 @@ prnt.onclick = function prntScr() {
 function disconnect(num){
     let nodes_list = [vp, vn, v1p, v1n, v2p, v2n, v3p, v3n, cvp, cvn, cv1p, cv1n, cv2p, cv2n, cv3p, cv3n] 
     instance.deleteConnectionsForElement(nodes_list[num])   
+}
+
+
+function myFunction()  {
+
+       document.getElementById("add").disabled=true;
+
 }
 
   /*   function highlight() {
