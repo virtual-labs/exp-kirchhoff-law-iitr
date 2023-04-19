@@ -1,6 +1,7 @@
 
 .clear {
     float: none;
+  
 }
 
 body {
@@ -8,7 +9,7 @@ body {
 }
 
 .container {
-    height: 1600px;
+    height: 1620px;
     width: 1500px;
     background-color: #606471;
     border-radius: 10px;
@@ -18,16 +19,10 @@ body {
 }
 
 .container .heading {
-
-
     width: 1400px;
     height: 40px;
-    background-color: #eaeaea;
-
+    background-color: #1e1e1e;
     margin: 0px auto;
-
-
-
     border-radius: 10px;
 }
 
@@ -35,12 +30,13 @@ body {
     text-align: center;
     font-family: 'Zacbel X', sans-serif;
     font-size: 30px;
-    color: #313131
+    color: white;
+    padding-top: 6px;
+
 }
 
 .control-panel {
     border: none;
-
 }
 
 .control-panel {
@@ -57,18 +53,15 @@ body {
     text-align: center;
     font-family: 'Zacbel X', sans-serif;
     font-size: 20px;
-    color: #313131
+    color: black
 }
 .control-panel-buttons button {
     border: none;
     height: 35px;
     outline: none;
     background-color: rgba(129, 129, 129, 0.313);
-
-    margin: -20px 10px;
+    margin: -2px 10px;
     border-radius: 10px;
-    ;
-
     text-align: center;
     font-family: 'Foco Trial', sans-serif;
     font-weight: bold;
@@ -91,21 +84,19 @@ body {
 
 .sliders {
 
-
-
-    height: 130px;
+    height: 170px;
     width: 500px;
     background-color: #eaeaea;
     margin: 10px 50px 0px;
     border-radius: 10px;
-
 
 }
 .sliders p{
     text-align: center;
     font-size: 20px;
     font-family: 'Zacbel X', sans-serif;
-    color:rgb(31, 31, 31);
+    /* color:rgb(31, 31, 31); */
+    color: black;
 
 }
 .sliders label {
@@ -124,9 +115,7 @@ body {
     width: 300px;
     border-radius: 10px;
     background-color: #1e1e1e;
-
-    margin: -2px 73px;
-
+    margin: -2px 100px;
 }
 
 .sliders input::-webkit-slider-thumb {
@@ -218,9 +207,7 @@ body {
     border-radius: 10px;
     background-color: #1e1e1e;
     margin: 0 50px;
-
     top: -15.7em;
-
 }
 
 .voltmeters {
@@ -287,8 +274,8 @@ body {
     text-align: center;
     font-size: 20px;
     font-family: 'Zacbel X', sans-serif;
-    color:rgb(31, 31, 31);
-    margin-top: 2px;
+    color:black;
+     margin-top: 0px; 
 }
 .table table {
     width: 500px;
@@ -539,10 +526,8 @@ body {
 .graph {
     position: relative;
     top: 25em;
-
     width: 1300px;
     height: 700px;
-
     margin: 0px auto;
     border-radius: 10px;
     background-color: #b1b1b1;
@@ -550,9 +535,8 @@ body {
 
 .graph .graph-heading {
     width: 1300px;
-
     height: 60px;
-    background-color: #d0d0d0;
+    background-color:#1e1e1e ;
     border-radius: 10px;
 }
 
@@ -571,11 +555,8 @@ body {
     position: relative;
     top: -515px;
     left: px;
-
-
-    background-color: white;
+     background-color: white;
     border-radius: 10px;
-
     filter: drop-shadow(10px 10px 10px rgba(75, 75, 75, 0.31));
 }
 
@@ -584,20 +565,17 @@ body {
     margin: auto;
     height: 500px;
     width: 1000px;
-
 }
 
 .PSdisplay {
     position: relative;
     background-color: rgba(24, 22, 22, 0.834);
     color: red;
-
     text-align: center;
     font-family: 'Seven Segment';
     font-weight: bold;
     border: inset;
     font-size: 40px;
-
     width: 100px;
     height: 40px;
     right: 11em;
@@ -612,10 +590,8 @@ body {
     width: 100px;
     right: 16.5em;
     top: 10.2em;
-
     background-color: #111111;
     border-radius: 2px;
-
 }
 
 #PSval::-webkit-slider-thumb {
@@ -626,8 +602,6 @@ body {
     width: 10px;
     cursor: grab;
     background-color: #aa0a0a;
-
-
 }
 
 #PSval::-webkit-slider-thumb:active {
@@ -638,52 +612,87 @@ body {
     z-index: +2;
     background-color: #808080;
     cursor: default;
-
-
 }
 
 #PSval:disabled::-webkit-slider-thumb {
 
     background-color: #808080;
     cursor: default;
-
 }
 
 #r3val:disabled {
     background-color: #808080;
     cursor: default;
-
 }
 
 #r2val:disabled {
     background-color: #808080;
     cursor: default;
-
 }
 
 #r1val:disabled {
     background-color: #808080;
     cursor: default;
-
 }
 
-#r1val:disabled+label {
-    color: #808080;
+/* #r1val:disabled+label {
+     color: #808080; 
+    color: black;
     cursor: default;
-
+   z-index: 1;
+    margin-left: 450px;
+    bottom: 27px;
+    
 }
 
 #r2val:disabled+label {
-    color: #808080;
+    color: black;
     cursor: default;
-
+    z-index: 1;
+    margin-left: 450px;
+    bottom: 26px;
+    
 }
 
 #r3val:disabled+label {
-    color: #808080;
+    color: black;
     cursor: default;
+    z-index: 1;
+    margin-left: 450px;
+    bottom: 26px;
+    
+} */
+
+#r1_label{
+
+ 
+    color: black;
+    cursor: default;
+   z-index: 1;
+    margin-left: 475px;
+    bottom: 27px;
 
 }
+
+#r2_label {
+
+    color: black;
+    cursor: default;
+    z-index: 1;
+    margin-left: 475px;
+    bottom: 26px;
+
+}
+
+#r3_label {
+
+    color: black;
+    cursor: default;
+    z-index: 1;
+    margin-left: 475px;
+    bottom: 26px;
+}
+
 
 .instructions {
     background-color: #e8e8e8;
@@ -694,13 +703,10 @@ body {
     font-size: 19px;
     padding-top: -20px;
     overflow:visible;
-
     transition: all 0.2s ease-in-out;
-
     position: absolute;
     top: 40px;
     left: -300px;
-
     height: 650px;
     width: 300px;
 }
@@ -718,7 +724,6 @@ body {
     text-align: center;
     margin-top: -10px;
     font-size: 30px;
-
     height: 40px;
     width: 90%;
 }
@@ -732,7 +737,6 @@ body {
     border-radius: 10px;
     font-size: 19px;
     overflow: scroll;
-
     height: 550px;
 }
 
@@ -744,10 +748,8 @@ body {
     text-align: center;
     font-size: 20px;
     border-radius: 0px 10px 10px 0px;
-
     height: 120px;
     width: 50px;
-
     position: absolute;
     top: 10px;
     left: 300px;

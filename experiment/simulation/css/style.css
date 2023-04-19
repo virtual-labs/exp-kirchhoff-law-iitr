@@ -10,7 +10,7 @@ body {
 .container {
     
     height: 1500px;
-    width: 1500px;
+    width: 1505px;
     background-color: #606471;
     border-radius: 10px;
     margin: 0 auto;
@@ -22,17 +22,19 @@ body {
 
 
     width: 1400px;
-    height: 40px;
-    background-color: #eaeaea;
+    height: 60px;
+    background-color: #1e1e1e;
     margin: 0px auto;
     border-radius: 10px;
+    /* padding-top: 0px; */
 }
 
 .heading p {
     text-align: center;
     font-family: 'Zacbel X', sans-serif;
     font-size: 30px;
-    color: #313131
+    color: white;
+    padding-top: 13px;
 }
 
 .control-panel {
@@ -46,7 +48,7 @@ body {
     height: 100px;
     width: 500px;
     background-color: #eaeaea;
-    margin: 10px 50px 0px;
+    margin: 10px 50px;
     border-radius: 10px;
     text-align: center;
 }
@@ -54,18 +56,15 @@ body {
     text-align: center;
     font-family: 'Zacbel X', sans-serif;
     font-size: 20px;
-    color: #313131
+    color: black;
 }
 .control-panel-buttons button {
     border: none;
     height: 35px;
     outline: none;
     background-color: rgba(129, 129, 129, 0.313);
-
-    margin: -20px 10px;
+    margin: -2px 10px;
     border-radius: 10px;
-    ;
-
     text-align: center;
     font-family: 'Foco Trial', sans-serif;
     font-weight: bold;
@@ -77,7 +76,6 @@ body {
 .control-panel-buttons button:hover {
     background-color: #1e1e1ee8;
     color: rgb(238, 234, 234);
-
 }
 
 .control-panel-buttons button:active {
@@ -89,20 +87,19 @@ body {
 .sliders {
 
 
-
-    height: 130px;
+z-index: 1;
+    height: 170px;
     width: 500px;
     background-color: #eaeaea;
     margin: 10px 50px 0px;
     border-radius: 10px;
-
 
 }
 .sliders p{
     text-align: center;
     font-size: 20px;
     font-family: 'Zacbel X', sans-serif;
-    color:rgb(31, 31, 31);
+    color:black;
 
 }
 .sliders label {
@@ -112,8 +109,6 @@ body {
     position: relative;
     right:440px;
     bottom:3px;
-
-
 }
 
 .sliders input {
@@ -121,9 +116,7 @@ body {
     width: 300px;
     border-radius: 10px;
     background-color: #1e1e1e;
-
-    margin: -2px 73px;
-
+    margin: -2px 100px;
 }
 
 .sliders input::-webkit-slider-thumb {
@@ -142,7 +135,6 @@ body {
 
 .sliders input::-webkit-slider-thumb:active {
     cursor: grabbing;
-
 }
 
 
@@ -175,9 +167,7 @@ body {
     border-radius: 10px;
     background-color: #1e1e1e;
     margin: 0 50px;
-
     top: -15.7em;
-
 }
 
 .voltmeters {
@@ -190,19 +180,16 @@ body {
 .Voltmeter1 {
     position: relative;
     left: 15em;
-
 }
 
 .Voltmeter2 {
     position: relative;
     left: 10em;
-
 }
 
 .Voltmeter3 {
     position: relative;
     left: 4.5em;
-
 }
 
 .supply {
@@ -232,7 +219,7 @@ body {
 .table {
     position: relative;
     float: left;
-    top: -14.95em;
+    top: -14.70em;
     border-radius: 10px;
     width: 500px;
     height: 380px;
@@ -244,7 +231,7 @@ body {
     text-align: center;
     font-size: 20px;
     font-family: 'Zacbel X', sans-serif;
-    color:rgb(31, 31, 31);
+    color:black;
     margin-top: 2px;
 }
 .table table {
@@ -282,7 +269,6 @@ body {
 #pow-start {
     background-color: #1e1e1e00;
     position: relative;
-
     height: 36.5px;
     width: 36.5px;
     top: -62em;
@@ -326,8 +312,6 @@ body {
     right: 25.2em;
     height: 15px;
     width: 15px;
-
-
 }
 
 #v2p {
@@ -337,8 +321,6 @@ body {
     right: 18em;
     height: 15px;
     width: 15px;
-
-
 }
 
 #v2n {
@@ -348,7 +330,6 @@ body {
     right: 15.2em;
     height: 15px;
     width: 15px;
-
 }
 
 #v3p {
@@ -358,8 +339,6 @@ body {
     right: 8.5em;
     height: 15px;
     width: 15px;
-
-
 }
 
 #v3n {
@@ -369,25 +348,21 @@ body {
     right: 5.7em;
     height: 15px;
     width: 15px;
-
-
-
-
 }
 
 #c-vp {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -40.3em;
-    right: 48.3em;
+    top: -40.8em;
+    right: 48.2em;
 }
 
 #c-vn {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -37.2em;
+    top: -37.7em;
     right: 50em;
 
 }
@@ -396,68 +371,48 @@ body {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47em;
+    top: -47.6em;
     right: 44.2em;
-
-
-
-
 }
 
 #c-v1n {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47em;
+    top: -47.6em;
     right: 34.9em;
-
-
-
 }
 
 #c-v2p {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -41.2em;
+    top: -41.7em;
     right: 29.4em;
-
-
-
-
 }
 
 #c-v2n {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -30.8em;
-    right: 31em;
-
-
-
+    top: -31.3em;
+    right: 31em
 }
 
 #c-v3p {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47em;
+    top: -47.6em;
     right: 25.4em;
-
-
-
 }
 
 #c-v3n {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47em;
+    top: -47.5em;
     right: 16em;
-
-
-
 }
 
 .input-boxes input {
@@ -475,30 +430,25 @@ body {
     position: relative;
     top: -25.4em;
     right: 13.5em;
-
 }
 
 #textInputR2 {
     position: relative;
     top: -21.6em;
     right: 4em;
-
 }
 
 #textInputR3 {
     position: relative;
     top: -25.4em;
     right: 4.2em;
-
 }
 
 .graph {
     position: relative;
     top: 25em;
-
     width: 1300px;
     height: 700px;
-
     margin: 0px auto;
     border-radius: 10px;
     background-color: #b1b1b1;
@@ -506,10 +456,10 @@ body {
 
 .graph .graph-heading {
     width: 1300px;
-
     height: 60px;
-    background-color: #d0d0d0;
+    background-color:#1e1e1e;
     border-radius: 10px;
+
 }
 
 .graph p {
@@ -519,20 +469,14 @@ body {
     font-size: 50px;
     color: #111111;
     padding: 5px;
-
-
 }
 
 .MyCanvas {
     position: relative;
     top: -550px;
     left: px;
-
-
     background-color: white;
     border-radius: 10px;
-    ;
-
     filter: drop-shadow(10px 10px 10px rgba(75, 75, 75, 0.31))
 }
 
@@ -548,13 +492,11 @@ body {
     position: relative;
     background-color: rgba(24, 22, 22, 0.834);
     color: red;
-
     text-align: center;
     font-family: 'Seven Segment';
     font-weight: bold;
     border: inset;
     font-size: 40px;
-
     width: 100px;
     height: 40px;
     right: 11em;
@@ -569,7 +511,6 @@ body {
     width: 100px;
     right: 16.5em;
     top: 10.2em;
-
     background-color: #111111;
     border-radius: 2px;
 
@@ -624,23 +565,64 @@ body {
 
 }
 
-#r1val:disabled+label {
-    color: #808080;
+/* #r1val:disabled+label {
+     position: absolute; 
+    color: black;
     cursor: default;
+    z-index: 1;
+    margin-left: 450px;
+    bottom: 26px;
+    
+
+} */
+
+#r1_label {
+
+    color: black;
+    cursor: default;
+    z-index: 1;
+    margin-left: 475px;
+    bottom: 26px;
+}
+
+#r2_label {
+
+    color: black;
+    cursor: default;
+    z-index: 1;
+    margin-left: 475px;
+    bottom: 26px;
+}
+
+#r3_label{
+    color: black;
+    cursor: default;
+    z-index: 1;
+    margin-left: 475px;
+    bottom: 26px;
+    
+
 
 }
 
-#r2val:disabled+label {
-    color: #808080;
+/* #r2val:disabled+label {
+    color: black;
     cursor: default;
+    z-index: 1;
+    margin-left: 450px;
+    bottom: 26px;
+    
+} */
 
-}
-
-#r3val:disabled+label {
-    color: #808080;
+/* #r3val:disabled+label {
+    color: black;
     cursor: default;
+    z-index: 1;
+    margin-left: 450px;
+    bottom: 26px;
+    
 
-}
+} */
 
 .instructions {
     background-color: #e8e8e8;

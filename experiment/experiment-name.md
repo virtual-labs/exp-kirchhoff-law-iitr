@@ -1,1 +1,1 @@
-## To study and verify the Kirchhoff's voltage law..
+## To study and verify the Kirchhoff's law..

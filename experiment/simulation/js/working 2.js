@@ -136,13 +136,6 @@ window.onload = function fix() {
     document.body.style.zoom = "89%";
 }
 
-reset.onclick = function reset_conn(){
-    window.location.reload()
-}
-
-add.disabled=true;
-
-
 function numOfConn(node){
     return instance.getConnections({ source:node }).length + instance.getConnections({ target:node }).length
 }
@@ -442,7 +435,7 @@ plot.onclick = function plotVal() {
                     label: "I3",
                     fill: false,
                     lineTension: 0.3,
-                    borderColor: "yellow",
+                    borderColor: "orange",
                     data: I3Val,
                     legend: "I3"
 
@@ -455,7 +448,8 @@ plot.onclick = function plotVal() {
                         beginAtZero: true,
                         title: {
                             display: true,
-                            text: "Current"
+                            text: "Current(A)",
+                            color:"black"
                         }
                     },
                     x: {
@@ -463,7 +457,8 @@ plot.onclick = function plotVal() {
                         type: "linear",
                         title: {
                             display: true,
-                            text: "Voltage(Power Supply)"
+                            text: "Voltage(Power Supply)",
+                            color:"black"
                         }
                     }
                 }
@@ -478,6 +473,11 @@ plot.onclick = function plotVal() {
 prnt.onclick = function prntScr() {
     window.print()
 }
+
+reset.onclick = function reset_conn(){
+    window.location.reload()
+}
+
 
  /* function highlight() {
     
