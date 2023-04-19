@@ -18,10 +18,13 @@
          /* position: absolute;
           margin-top: 375px;
           margin-left: 520px;*/
-          margin-top: 400px;
-          max-width: 1500px;
-          padding: 3px;
-          background-color: #606471;
+          margin-top: 430px;
+          width: 1500px;
+          height: 60px;
+          background-color:#1e1e1e ;
+          margin-left:-2px ;
+          position: absolute;
+          font-size: larger;
           color: white;
         }
         </style>
@@ -41,20 +44,18 @@
                     <li id="s1"><b>STEP 1:</b> Make connections by dragging nodes from aparatus to the circuit.</li>
                         <ul>
                             <b>(a)</b> Connect power supply to the circuit (1-9, 2-10).<br>
-                           <b>(b)</b> Connect ammeters (3-11, 4-12) and (5-13, 6-14) and (7-15, 8-16) or you can connect any ammeter to any resistance in circuit.<br>
-                           <b> (c)</b> Click on the label to delete all the connections for the corresponding nodes.<br>
+                           <b>(b)</b>Connect ammeters (3-11, 4-12) and (5-13, 6-14) and (7-15, 8-16) or you can connect any ammeter to any resistance in circuit.<br>
+                           <b> (c)</b>  Click on the label to delete all the connections for the corresponding nodes.<br>
                         </ul>
-                    <li id="s2"><b>STEP 2:</b> Check your connections by clicking on the ‘CHECK’ button.</li>
-                    <li id="s3"><b>STEP 3:</b> If the alert is ‘Invalid connections’ the experiment will be reload automatically and repeat from step 1. </li>
-                    <li id="s4"><b>STEP 4:</b> If the alert is Right Connections then follow the below steps.  </li>
-                    <li id="s3"><b>STEP 5:</b> Set the values of resistances R1, R2 & R3 by adjusting the sliders, these values will remain constant throughout the experiment.</li>
-                    <li id="s4"><b>STEP 6:</b> Click the ‘Power’ button to turn on the power supply. </li>
-                    <li id="s5"><b>STEP 7:</b> Now, vary the voltage value by adjusting the voltage slider, the readings on the ammeter will change accordingly.</li>
-                    <li id="s6"><b>STEP 8:</b> Click on the ‘ADD’ button to add the readings to the observation table.</li>
-                    <li id="s7"><b>STEP 9:</b> Repeat steps 5 and 6 until we reach to the 6th reading (Minimum reading to be taken to plot the graph is 6).</li>
-                    <li id="s8"><b>STEP 10:</b> Click on the ‘PLOT’ button to display the graph.</li>
-                    <li id="s9"><b>STEP 11:</b> Click on ‘PRINT’ button to take out the print of the page.</li>
-                    <li id="s10"><b>STEP 12:</b> Click on ‘RESET’ button to refresh the page. </li>
+                    <li id="s2"><b>STEP 2:</b> Check your connections by clicking on the <b>‘CHECK’</b> button.</li>
+                    <li id="s3"><b>STEP 3:</b> Set the values of resistances R1, R2 & R3 by adjusting the sliders on left, these values will remain constant throughout the experiment.</li>
+                    <li id="s4"><b>STEP 4:</b> Click on the <b>‘Power’</b> button to turn on the power supply. </li>
+                    <li id="s5"><b>STEP 5:</b> Now, vary the voltage value by moving the voltage slider to the right side, the readings on the ammeter will change accordingly.</li>
+                    <li id="s6"><b>STEP 6:</b> Click on the <b> ‘ADD’</b> button to add the readings to the observation table.</li>
+                    <li id="s7"><b>STEP 7:</b> Repeat steps 6 and 7 until we reach to the 6th reading (Minimum reading to be taken to plot the graph is 6).</li>
+                    <li id="s8"><b>STEP 8:</b> Click on the <b> ‘PLOT’</b> button to display the graph.</li>
+                    <li id="s9"><b>STEP 9:</b> Click on <b> ‘PRINT’</b> button to take out the print of the page.</li>
+                    <li id="s10"><b>STEP 10:</b> Click on <b> ‘RESET’</b> button to refresh the page. </li>
                 </ul>
             </div>
 
@@ -67,7 +68,7 @@
 
         <div class="heading">
 
-            <p>TO VERIFY KIRCHHOFF'S CURRENT LAW</p>
+            <p><b> TO VERIFY KIRCHHOFF'S CURRENT LAW</b></p>
 
         </div>
 
@@ -77,7 +78,7 @@
         <div class="control-panel">
 
             <div class="control-panel-buttons">
-                <p>ACTION BUTTONS</p>
+                <p style=" color: white; border-radius: 10px; border:2.5px solid black; background-color:#1e1e1e; padding:20px,30px,40px,50px"><b> ACTION BUTTONS</b></p>
                 <button id="check">CHECK</button>
                 <button id="add">ADD</button>
                 <button id="plot">PLOT</button>
@@ -91,18 +92,18 @@
 
 
         <div class="sliders">
-            <p>SLIDERS</p>
+            <p style=" color: white; border-radius: 10px; border:2.5px solid black; background-color:#1e1e1e;; padding:20px,30px,40px,50px"><b> SLIDERS</b></p>
 
             <input type="range" disabled="true" id="r1val" name="r1val" value="1" min="1" max="20" step="0.1">
-            <label id = "r1_label"for="r1val">R1(&#8486;) </label>
+            <label style="color:black" id = "r1_label"for="r1val">R<sub>1</sub>(&#8486;) </label>
 
 
             <input type="range" disabled="true" id="r2val" name="r2val" value="1" min="1" max="20" step="0.1">
-            <label id = "r2_label" for="r2val">R2(&#8486;)</label>
+            <label id = "r2_label" for="r2val">R<sub>2</sub>(&#8486;)</label>
 
 
             <input type="range" disabled="true" id="r3val" name="r3val" value="1" min="1" max="20" step="0.1">
-            <label id = "r3_label" for="r3val" >R3(&#8486;)</label>
+            <label id = "r3_label" for="r3val" >R<sub>3</sub>(&#8486;)</label>
 
         </div>
         <div class="meters">
@@ -135,15 +136,15 @@
             <img height="550" width="800" src="images/kcl images/circuit.png" class="diagram" id="cdiag" alt="">
         </div>
         <div class="table">
-            <p>OBSERVATION TABLE</p>
+            <p style=" color: white; border-radius: 10px; border:2.5px solid black; background-color:#1e1e1e;; padding:17px,30px,40px,50px"><b>OBSERVATION TABLE </b></p>
             <!--TABLE TO BE DISPLAYED HERE-->
             <table id="valTable">
                 <tr>
                     <th>S.No</th>
-                    <th>Voltage</th>
-                    <th>I1</th>
-                    <th>I2</th>
-                    <th>I3</th>
+                    <th>Voltage(V)</th>
+                    <th>I<sub>1</sub>(A)</th>
+                    <th>I<sub>2</sub>(A)</th>
+                    <th>I<sub>3</sub>(A)</th>
                 </tr>
 
             </table>
@@ -193,19 +194,16 @@
 
         <div class="graph" id="plotContiner">
             <div class="graph-heading">
-                <p>GRAPH</p>
+                <p style="color: white; padding-top: 16px; margin-top: 50px; margin-left: 250px; font-size: 30px;"><b> GRAPH</b> </p>
                 </div>
                 <div class="chart-container">
                 <canvas id="myPlot" class="MyCanvas" height = "600" width = "1000">
 
                 </canvas>
                 </div>
-
-
     </div>
-
     <footer>
-        <p>Copyright@2022 Virtual Labs, IIT Roorkee</p>
+        <p >Copyright@2022 Virtual Labs, IIT Roorkee</p>
        <!-- <p><a href="mailto:hege@example.com">hege@example.com</a></p>  --> 
       </footer>
 

@@ -1,4 +1,3 @@
-
 var cont = document.getElementById("container")
 
 var ps = document.getElementById("pow-start")
@@ -47,8 +46,6 @@ var cv3p = document.getElementById("c-v3p")
 var cv3n = document.getElementById("c-v3n")
 
 var steps = document.getElementById("steps")
-
-
 
 var index = 1
 var voltageVal = []
@@ -142,55 +139,53 @@ reset.onclick = function reset_conn(){
     window.location.reload()
 }
 
-add.disabled=true
-
 check.onclick = function MyCheck() {
 
     flags3 = 1;
 
-    instance.addEndpoint([vp, v1p, v2p, v3p], {
-        endpoint: "Dot",
-        anchor: ["Top"],
-        isSource: true,
-        isTarget: true,
-        paintStyle: { fill: "rgb(97,106,229)", strokeWidth: 2.5 },
-        connectionType: "positive",
-        connectionsDetachable: false,
-        maxConnections: 1
-    })
+    // instance.addEndpoint([vp, v1p, v2p, v3p], {
+    //     endpoint: "Dot",
+    //     anchor: ["Top"],
+    //     isSource: true,
+    //     isTarget: true,
+    //     paintStyle: { fill: "rgb(97,106,229)", strokeWidth: 2.5 },
+    //     connectionType: "positive",
+    //     connectionsDetachable: false,
+    //     maxConnections: 1
+    // })
 
-    instance.addEndpoint([vn, v1n, v2n, v3n], {
-        endpoint: "Dot",
-        anchor: ["Top"],
-        isSource: true,
-        isTarget: true,
-        paintStyle: { fill: "rgb(229, 97, 97)", strokeWidth: 2.5 },
-        connectionType: "negative",
-        connectionsDetachable: false,
-        maxConnections: 1
-    })
+    // instance.addEndpoint([vn, v1n, v2n, v3n], {
+    //     endpoint: "Dot",
+    //     anchor: ["Top"],
+    //     isSource: true,
+    //     isTarget: true,
+    //     paintStyle: { fill: "rgb(229, 97, 97)", strokeWidth: 2.5 },
+    //     connectionType: "negative",
+    //     connectionsDetachable: false,
+    //     maxConnections: 1
+    // })
 
-    instance.addEndpoint([cvp, cv1p, cv2p, cv3p], {
-        endpoint: "Dot",
-        anchor: ["Top"],
-        isSource: true,
-        isTarget: true,
-        connectionType: "positive",
-        paintStyle: { fill: "rgb(97,106,229)", strokeWidth: 2.5 },
-        connectionsDetachable: false,
-        maxConnections: 1
-    })
+    // instance.addEndpoint([cvp, cv1p, cv2p, cv3p], {
+    //     endpoint: "Dot",
+    //     anchor: ["Top"],
+    //     isSource: true,
+    //     isTarget: true,
+    //     connectionType: "positive",
+    //     paintStyle: { fill: "rgb(97,106,229)", strokeWidth: 2.5 },
+    //     connectionsDetachable: false,
+    //     maxConnections: 1
+    // })
 
-    instance.addEndpoint([cvn, cv1n, cv2n, cv3n], {
-        endpoint: "Dot",
-        anchor: ["Top"],
-        isSource: true,
-        isTarget: true,
-        connectionType: "negative",
-        paintStyle: { fill: "rgb(229, 97, 97)", strokeWidth: 2.5 },
-        connectionsDetachable: false,
-        maxConnections: 1
-    })
+    // instance.addEndpoint([cvn, cv1n, cv2n, cv3n], {
+    //     endpoint: "Dot",
+    //     anchor: ["Top"],
+    //     isSource: true,
+    //     isTarget: true,
+    //     connectionType: "negative",
+    //     paintStyle: { fill: "rgb(229, 97, 97)", strokeWidth: 2.5 },
+    //     connectionsDetachable: false,
+    //     maxConnections: 1
+    // })
 
     for (let i = 0; i < 39; i++) {
         if (instance.getConnections({ source: [validConn[i]], target: [validConn[i + 1]] })[0] != undefined) {
@@ -231,7 +226,6 @@ check.onclick = function MyCheck() {
     }
 
     if ((arrChk.length == 8) && (instance.getAllConnections().length == 8)) {
-
         window.alert("Right connections! Please choose the resistance values")
 
         if (voltageVal.length == 0) {
@@ -245,14 +239,10 @@ check.onclick = function MyCheck() {
     }
 
     else if (arrChk.length == 0) {
-        
         window.alert("Please make connections")
-        
-        
     }
 
     else {
-
         window.alert("Invalid connections!")
         window.location.reload()
     }
@@ -263,15 +253,12 @@ ps.onclick = function toggle() {
     flags5 = 1;
 
     if (state == 0) {
-
         document.getElementById('power-supply').src = 'images/PowerSupplyOn.png'
         PSval.disabled = false;
         PSdis.disabled = false;
         state = 1;
     }
-
     else if (state == 1) {
-
         document.getElementById('power-supply').src = 'images/PowerSupplyOff.png'
         PSval.disabled = true;
         PSdis.disabled = true;
@@ -460,7 +447,8 @@ plot.onclick = function plotVal() {
                         beginAtZero: true,
                         title: {
                             display: true,
-                            text: "Voltage"
+                            text: "Voltage(V)",
+                            color:"black"
                         }
                     },
                     x: {
@@ -469,7 +457,8 @@ plot.onclick = function plotVal() {
                         type: "linear",
                         title: {
                             display: true,
-                            text: "Voltage(Power supply)"
+                            text: "Voltage(Power supply)",
+                            color:"black"
                         }
                     }
                 }
@@ -488,13 +477,6 @@ prnt.onclick = function prntScr() {
 function disconnect(num){
     let nodes_list = [vp, vn, v1p, v1n, v2p, v2n, v3p, v3n, cvp, cvn, cv1p, cv1n, cv2p, cv2n, cv3p, cv3n] 
     instance.deleteConnectionsForElement(nodes_list[num])   
-}
-
-
-function myFunction()  {
-
-       document.getElementById("add").disabled=true;
-
 }
 
   /*   function highlight() {
