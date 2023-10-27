@@ -5,7 +5,7 @@
 <b>Discipline | <b> Electrical Engineering
 :--|:--|
 <b> Lab | <b> Basic Electrical Science (Simulation)
-<b> Experiment|     <b> To study and verify the Kirchhoff's law.
+<b> Experiment|     <b>2. To study and verify the Kirchhoff's law.
 <h5> About the Experiment : </h5> <br>
 
 <b> To verify kirchhoff's voltage law.</b>
