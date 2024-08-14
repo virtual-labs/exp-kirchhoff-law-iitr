@@ -1,21 +1,21 @@
 ## Post test
 #### Please attempt the following questions
 
-Q1. KVL is related to -<br>
+<b>Q1. KVL is related to-</b><br>
 
  A. Junction current <br> 
  B. Battery e.m.fs <br> 
  C. IR Drop <br> 
  C. Both B & C <br> 
 
-Q2. According to Kirchhoff’s voltage law, the algebraic some of all IR drops and e.m.fs. in any closed of a network is always -<br>
+<b>Q2. According to Kirchhoff’s voltage law, the algebraic some of all IR drops and e.m.fs. in any closed of a network is always-</b><br>
 
  A. Negative <br>
  B. Positive <br>
  C. Determined by battery e.m.fs. <br>
  D. Zero  <br>
 
-Q3. Kirchhoff’s law valid for -<br>
+<b>Q3. Kirchhoff’s law valid for-</b><br>
 
  A. Linear circuit only<br>
  B. Passive time invariant circuits<br>
@@ -23,7 +23,7 @@ Q3. Kirchhoff’s law valid for -<br>
  D. Both linear and nonlinear circuits only<br>
 
 
-Q4.  Mesh analysis is based on -<br>
+<b>Q4.  Mesh analysis is based on-</b><br>
 
  A. Kirchhoff’s voltage law <br>
  B. Kirchhoff’s current law<br>
@@ -31,7 +31,7 @@ Q4.  Mesh analysis is based on -<br>
  D. Law of conservation of energy<br>
 
 
-Q5. A super mesh is created if -<br>
+<b>Q5. A super mesh is created if-</b><br>
 
  A. A voltage source is common to two loops <br>
  B. A current source is common to two loops <br>
@@ -39,14 +39,14 @@ Q5. A super mesh is created if -<br>
  D. A voltage source is common to two nodes <br>
 
 
-Q6. What is the internal resistance of voltage source and voltmeter?<br>
+<b>Q6. What is the internal resistance of voltage source and voltmeter?</b><br>
 
  A. Zero, infinity <br>
  B. Infinity, zero <br>
  C. Zero, infinity <br>
  D. Zero, zero <br>
 
-Q7.  What is reading of voltmeter? <br>
+<b>Q7.  What is reading of voltmeter?</b> <br>
 <img src="images/v3.png">
 
  A. 2V <br>
@@ -55,14 +55,14 @@ Q7.  What is reading of voltmeter? <br>
  D. 0V <br>
  
 
-Q8. Connetion of voltmeter and ammeter in any circuit -<br>
+<b>Q8. Connetion of voltmeter and ammeter in any circuit-</b><br>
 
  A. Shunt and series with resistance <br>
  B. Series and shunt with resistance <br>
  C. Both are in series  <br>
  D. Both are in shunt  <br>
 
-Q9. Current I=? 
+<b>Q9. Current I=?</b>
 
 <img src="images/v4.png">
 
@@ -71,7 +71,7 @@ Q9. Current I=?
  C. -0.2 <br>
  D. 0.2A <br>
 
-Q10. What is the voltage across 5ohm resistor if current source has current 17/3 A ?<br>
+<b>Q10. What is the voltage across 5ohm resistor if current source has current 17/3 A? </b><br>
 
 <img src="images/v5.png">
 

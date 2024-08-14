@@ -5,6 +5,23 @@
 {"question":"KVL is applied -","answers":{"a":"Node","b":"Mesh","c":"Loop","d":"Both loop & mesh"},"correctAnswer":"d"},
 {"question":"AC and DC both types of circuit can use kirchhoff’s law -","answers":{"a":"True","b":"False"},"correctAnswer":"a"},
 {"question":"KVL is generally used for -","answers":{"a":"Voltage","b":"Current","c":"Resistance","d":"Power  "},"correctAnswer":"a"},
-{"question":"Find the value of currents I1 & I2 -","answers":{"a":"0.3A,0.1A","b":"-0.1A,-0.3A","c":" -0.3A,-0.1A","d":"0.1A,0.2A"},"correctAnswer":"d"},
+
+{
+    "question":"Find the value of currents I1 & I2 -",
+
+    "name":"circuit",
+    "image_path":"/images/v1.png",
+
+    "answers":{"a":"0.3A,0.1A","b":"-0.1A,-0.3A","c":" -0.3A,-0.1A","d":"0.1A,0.2A"},
+    "correctAnswer":"d"},
+
+
 {"question":"Potential difference in a circuit is also called as____?","answers":{"a":"Voltage difference","b":"Electric pressure","c":"Electric tension","d":"All of the above"},"correctAnswer":"a"},
-{"question":"Calculate the voltage across 10 ohm resistor -","answers":{"a":"12V","b":"4V","c":"10V","d":"0V"},"correctAnswer":"b"}]
+
+{"question":"Calculate the voltage across 10 ohm resistor -",
+
+"name":"circuit",
+"image_path":"/images/v2.png",
+
+"answers":{"a":"12V","b":"4V","c":"10V","d":"0V"},
+"correctAnswer":"b"}]
