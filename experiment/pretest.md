@@ -50,7 +50,7 @@ D  Power<br><br>
 
 <b>Q8.  Find the value of currents I1 & I2-</b><br>
 
-<img src="images/v1.png">
+![](images/v1.png) 
 
 A  0.3A,0.1A<br>
 B  -0.1A,-0.3A<br>
@@ -66,9 +66,10 @@ D All of the above <br><br>
 
 <b>Q10. Calculate the voltage across 10 ohm resistor-</b><br>
 
-<img src="images/v2.png">
+![](images/v2.png) 
 
 A  12V<br>
 B  4V<br>
 C  10V<br> 
 D  0V<br><br>
+
