@@ -1,88 +1,76 @@
-## Post test
+## Post Test
+
 #### Please attempt the following questions
 
-<b>Q1. KVL is related to-</b><br>
+<div align="justify" style=font-size:18px >
 
- A. Junction current <br> 
- B. Battery e.m.fs <br> 
- C. IR Drop <br> 
- C. Both B & C <br> 
+Q1. Two wattmeters are sufficient to measure total three-phase power-
 
-<b>Q2. According to Kirchhoff’s voltage law, the algebraic some of all IR drops and e.m.fs. in any closed of a network is always-</b><br>
+A   True</br>
+B   False</br>
 
- A. Negative <br>
- B. Positive <br>
- C. Determined by battery e.m.fs. <br>
- D. Zero  <br>
+Q2. The wattmeter method is used to measure power in a three-phase load. The wattmeter readings are 400W and -35W. Calculate the total active power-
 
-<b>Q3. Kirchhoff’s law valid for-</b><br>
+A   360</br>
+B   365</br>
+C   370</br>
+D   375</br>
 
- A. Linear circuit only<br>
- B. Passive time invariant circuits<br>
- C. Nonlinear circuits only<br>
- D. Both linear and nonlinear circuits only<br>
+Q3. The input power to a three-phase load is 10kW at 0.8 Pf. Two wattmeters are connected to measure the power. Find the reading of higher reading wattmeter?
 
+A   7.165</br>
+B   6.165</br>
+C   5.165</br>
+D   4.165</br>
 
-<b>Q4.  Mesh analysis is based on-</b><br>
+Q4. The current coils of the two wattmeters are connected in-
 
- A. Kirchhoff’s voltage law <br>
- B. Kirchhoff’s current law<br>
- C. Law of conservation of momentum<br>
- D. Law of conservation of energy<br>
+A   Parallel</br>
+B   Series</br>
+C   Either series or parallel</br>
+D   Neither series nor parallel</br>
 
+Q5. A wattmeter is connected as shown in the figure. The wattmeter reads-
 
-<b>Q5. A super mesh is created if-</b><br>
+![](images/posttest1.png)
 
- A. A voltage source is common to two loops <br>
- B. A current source is common to two loops <br>
- C. A current source is common to two nodes <br>
- D. A voltage source is common to two nodes <br>
+A   Zero always</br>
+B   Total power consumed by Z1 and Z2</br>
+C   Power consumed by Z1</br>
+D   Power consumed by Z2</br>
 
+Q6. In the two-wattmeter method of 3ϕ power measurement, if the phase sequence of the supply is reversed:
 
-<b>Q6. What is the internal resistance of voltage source and voltmeter?</b><br>
+A   One of the meters will show a negative reading</br>
+B   The meters will not read</br>
+C   There won’t be a change in meter readings</br>
+D   The reading of wattmeters will be interchanged</br>
 
- A. Zero, infinity <br>
- B. Infinity, zero <br>
- C. Zero, infinity <br>
- D. Zero, zero <br>
+Q7. What is the reading (in kW) of both the wattmeter, when measuring the power of a three-phase three-wire system having an input of 5 kW and power factor of 0.866?
 
-<b>Q7.  What is reading of voltmeter?</b> <br>
-<img src="images/v3.png">
+A   5, 0</br>
+B   3.33, 1.67</br>
+C   2.5, 2.5</br>
+D   1, 4</br>
 
- A. 2V <br>
- B. 1V <br>
- C. 0.5V <br>
- D. 0V <br>
- 
+Q8. At which angle in two wattmeter method, one wattmeter shows zero readings?
 
-<b>Q8. Connetion of voltmeter and ammeter in any circuit-</b><br>
+A   Φ = 0°</br>
+B   Φ = 60°</br>
+C   Φ = 90°</br>
+D   Φ = 45°</br>
 
- A. Shunt and series with resistance <br>
- B. Series and shunt with resistance <br>
- C. Both are in series  <br>
- D. Both are in shunt  <br>
+Q9. If the reading of the two wattmeters is equal and opposite while measuring power in a 3-phase induction motor then the power factor of the load will be-
 
-<b>Q9. Current I=?</b>
+A   Unity</br>
+B   Zero</br>
+C   0.5 lagging</br>
+D   0.5 leading</br>
 
-<img src="images/v4.png">
+Q10. The two wattmeters used for the measurement of power input read 50 kW each. What will be the readings of the two wattmeters if the power factor is changed to 0.8 leading keeping the total input power same?
 
- A. -0.5A <br>
- B. 0.5A <br>
- C. -0.2 <br>
- D. 0.2A <br>
-
-<b>Q10. What is the voltage across 5ohm resistor if current source has current 17/3 A? </b><br>
-
-<img src="images/v5.png">
-
- A. 2.23A  <br>
- B. 5.31A <br>
- C. 2.32A <br>
- D. 8.96A <br>
-
-
-
-
-
-
-
+A   28.35W, 71.65W</br>
+B   31.25W, 73.71W</br>
+C   33.33W, 73.33W</br>
+D   38.35W, 75.5W</br>
+</div>
