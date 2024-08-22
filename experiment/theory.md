@@ -5,9 +5,9 @@ This law is also called “kirchhoff’s second law” <br>
 
 When the current passes through the resistor, there is a loss in energy and therefore a voltage drop. Kirchhoff’s voltage law. <br>
 
-<center> $ ∑Vi = 0  $ </center>
+<center> $ ∑Vi = 0  $ </center><br>
 
-<center><img src="images/Picture1.png"></center> <center>Fig. 1: Circuit Diagram to demonstrate Kirchoff's Voltage law</center> <br>
+<center><img src="images/Picture1_pro.png"></center> <center>Fig. 1: Circuit Diagram to demonstrate Kirchoff's Voltage law</center> <br>
 
 In any circuit, voltage drops across the resistors have opposite polarities to the source polarity.<br> 
 Remember that when traveling around the circuit to apply Kirchhoff's Voltage Law, be sure you are always going in the same direction (clockwise or counterclockwise) to determine whether a given element represents an increase or decrease in the voltage. If you begin jumping around, moving in different directions, your equation will be When crossing a resistor, the voltage change is determined by the ohm’s law…  <br>
