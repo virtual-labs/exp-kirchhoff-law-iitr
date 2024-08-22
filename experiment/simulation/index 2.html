@@ -28,12 +28,9 @@
           color: white;
         }
         </style>
-
     <link rel="stylesheet" href="css/style 2.css">
 </head>
-
 <body>
-
     <div class="container">
         <div class="instructions" id="instTab">
             <div class="insHeading">
@@ -74,13 +71,12 @@
 
         <div class="clear"></div>
 
-
         <div class="control-panel">
 
             <div class="control-panel-buttons">
                 <p style=" color: white; border-radius: 10px; border:2.5px solid black; background-color:#1e1e1e; padding:20px,30px,40px,50px"><b> ACTION BUTTONS</b></p>
                 <button id="check">CHECK</button>
-                <button id="add">ADD</button>
+                <button id="add" disabled="true" >ADD</button>
                 <button id="plot">PLOT</button>
                 <button id="reset">RESET</button>
                 <button id="print" onclick=' window.print();'>PRINT</button>
@@ -90,19 +86,16 @@
         </div>
         <!--CONTROL PANEL ENDS HERE-->
 
-
         <div class="sliders">
             <p style=" color: white; border-radius: 10px; border:2.5px solid black; background-color:#1e1e1e;; padding:20px,30px,40px,50px"><b> SLIDERS</b></p>
 
-            <input type="range" disabled="true" id="r1val" name="r1val" value="1" min="1" max="20" step="0.1">
+            <input style="margin-top: -15px;" type="range" disabled="true" id="r1val" name="r1val" value="1" min="1" max="20" step="0.1">
             <label style="color:black" id = "r1_label"for="r1val">R<sub>1</sub>(&#8486;) </label>
 
-
-            <input type="range" disabled="true" id="r2val" name="r2val" value="1" min="1" max="20" step="0.1">
+            <input style="margin-top: -15px;" type="range" disabled="true" id="r2val" name="r2val" value="1" min="1" max="20" step="0.1">
             <label id = "r2_label" for="r2val">R<sub>2</sub>(&#8486;)</label>
 
-
-            <input type="range" disabled="true" id="r3val" name="r3val" value="1" min="1" max="20" step="0.1">
+            <input style="margin-top: -15px;" type="range" disabled="true" id="r3val" name="r3val" value="1" min="1" max="20" step="0.1">
             <label id = "r3_label" for="r3val" >R<sub>3</sub>(&#8486;)</label>
 
         </div>
@@ -158,25 +151,25 @@
 
                 <allnodes>
                 <div class="node">
-                    <button id="vp"><label onclick="disconnect(0)">1</label></button>
-                    <button id="vn"><label onclick="disconnect(1)">2</label></button>
-                    <button id="v1p"><label onclick="disconnect(2)">3</label></button>
-                    <button id="v1n"><label onclick="disconnect(3)">4</label></button>
-                    <button id="v2p"><label onclick="disconnect(4)">5</label></button>
-                    <button id="v2n"><label onclick="disconnect(5)">6</label></button>
-                    <button id="v3p"><label onclick="disconnect(6)">7</label></button>
-                    <button id="v3n"><label onclick="disconnect(7)">8</label></button>
+                    <button id="vp"><label style="margin-left: -10px; font-size: 15px;width: auto;" onclick="disconnect(0)">1</label></button>
+                    <button id="vn"><label style="margin-left: -10px; font-size: 15px;width: auto;" onclick="disconnect(1)">2</label></button>
+                    <button id="v1p"><label style="margin-left: -10px; font-size: 15px;width: auto;" onclick="disconnect(2)">3</label></button>
+                    <button id="v1n"><label style="margin-left: -10px; font-size: 15px;width: auto;" onclick="disconnect(3)">4</label></button>
+                    <button id="v2p"><label style="margin-left: -10px; font-size: 15px;width: auto;" onclick="disconnect(4)">5</label></button>
+                    <button id="v2n"><label style="margin-left: -10px; font-size: 15px;width: auto;" onclick="disconnect(5)">6</label></button>
+                    <button id="v3p"><label style="margin-left: -10px; font-size: 15px;width: auto;" onclick="disconnect(6)">7</label></button>
+                    <button id="v3n"><label style="margin-left: -10px; font-size: 15px;width: auto;" onclick="disconnect(7)">8</label></button>
                 </div>
                 <div class="node-circuit">
                     <!--  c- refers to the position in the circuit -->
-                    <button id="c-vp"><label id = "label9" onclick="disconnect(8)">9</label></button>
-                    <button id="c-vn"><label id = "label10" onclick="disconnect(9)">10</label></button>
-                    <button id="c-v1p"><label id = "label11" onclick="disconnect(10)">11</label></button>
-                    <button id="c-v1n"><label id = "label12" onclick="disconnect(11)">12</label></button>
-                    <button id="c-v2p"><label id = "label13" onclick="disconnect(12)">13</label></button>
-                    <button id="c-v2n"><label id = "label14" onclick="disconnect(13)">14</label></button>
-                    <button id="c-v3p"><label id = "label15" onclick="disconnect(14)">15</label></button>
-                    <button id="c-v3n"><label id = "label16" onclick="disconnect(15)">16</label></button>
+                    <button id="c-vp"><label style="margin-left: -10px; font-size: 15px;width: auto;" id = "label9" onclick="disconnect(8)">9</label></button>
+                    <button id="c-vn"><label style="margin-left: -10px; font-size: 15px;width: auto;" id = "label10" onclick="disconnect(9)">10</label></button>
+                    <button id="c-v1p"><label style="margin-left: -10px; font-size: 15px;width: auto;" id = "label11" onclick="disconnect(10)">11</label></button>
+                    <button id="c-v1n"><label style="margin-left: -10px; font-size: 15px;width: auto;" id = "label12" onclick="disconnect(11)">12</label></button>
+                    <button id="c-v2p"><label style="margin-left: -10px; font-size: 15px;width: auto;" id = "label13" onclick="disconnect(12)">13</label></button>
+                    <button id="c-v2n"><label style="margin-left: -10px; font-size: 15px;width: auto;" id = "label14" onclick="disconnect(13)">14</label></button>
+                    <button id="c-v3p"><label style="margin-left: -10px; font-size: 15px;width: auto;" id = "label15" onclick="disconnect(14)">15</label></button>
+                    <button id="c-v3n"><label style="margin-left: -10px; font-size: 15px;width: auto;" id = "label16" onclick="disconnect(15)">16</label></button>
                 </div>
                 </allnodes>
 
