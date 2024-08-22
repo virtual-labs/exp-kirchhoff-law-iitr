@@ -72,6 +72,7 @@ const instance = jsPlumb.getInstance({
 })
 
 instance.bind("ready", function () {
+
     instance.registerConnectionTypes({
         "positive": {
             paintStyle: { stroke: "rgb(97,106,229)", strokeWidth: 2.5 },
@@ -89,8 +90,8 @@ instance.bind("ready", function () {
         isTarget: true,
         paintStyle: { fill: "rgb(97,106,229)" },
         connectionType: "positive",
-        maxConnections: 10,
-        connectionsDetachable: true
+        maxConnections: 1,
+        connectionsDetachable: true,
     })
 
     instance.addEndpoint([vn, v1n, v2n, v3n], {
@@ -102,7 +103,7 @@ instance.bind("ready", function () {
         paintStyle: { fill: "rgb(229, 97, 97)", strokeWidth: 0 },
         connectionType: "negative",
         connectionsDetachable: true,
-        maxConnections: 10,
+        maxConnections: 1,
     })
 
     instance.addEndpoint([cvp, cv1p, cv2p, cv3p], {
@@ -114,7 +115,7 @@ instance.bind("ready", function () {
         paintStyle: { fill: "rgb(97,106,229)", strokeWidth: 2.5 },
         connectionType: "positive",
         connectionsDetachable: true,
-        maxConnections: 10
+        maxConnections: 1
     })
 
     instance.addEndpoint([cvn, cv1n, cv2n, cv3n], {
@@ -126,17 +127,20 @@ instance.bind("ready", function () {
         paintStyle: { fill: "rgb(229, 97, 97)", strokeWidth: 2.5 },
         connectionType: "negative",
         connectionsDetachable: true,
-        maxConnections: 10
+        maxConnections: 1
+        
     })
 
 })
-
 window.onload = function fix() {
+
     document.body.style.zoom = "89%";
+
 }
 
 reset.onclick = function reset_conn(){
-    window.location.reload()
+
+    window.location.reload();
 }
 
 check.onclick = function MyCheck() {
@@ -226,8 +230,81 @@ check.onclick = function MyCheck() {
     }
 
     if ((arrChk.length == 8) && (instance.getAllConnections().length == 8)) {
-        window.alert("Right connections! Please choose the resistance values")
+        window.alert("Right connections! Please choose the resistance values");
+        check.disabled = true;
+        //   Here we are making all the connection nodes undetachable  
 
+   
+
+        document.getElementById("vp").style.pointerEvents='none';
+        document.getElementById("v1p").style.pointerEvents='none';
+        document.getElementById("v2p").style.pointerEvents='none';
+        document.getElementById("v3p").style.pointerEvents='none';
+        document.getElementById("vn").style.pointerEvents='none';
+        document.getElementById("v1n").style.pointerEvents='none';
+        document.getElementById("v2n").style.pointerEvents='none';
+        document.getElementById("v3n").style.pointerEvents='none';
+        document.getElementById("c-vp").style.pointerEvents='none';
+        document.getElementById("c-v1p").style.pointerEvents='none';
+        document.getElementById("c-v2p").style.pointerEvents='none';
+        document.getElementById("c-v3p").style.pointerEvents='none';
+        document.getElementById("c-vn").style.pointerEvents='none';
+        document.getElementById("c-v1n").style.pointerEvents='none';
+        document.getElementById("c-v2n").style.pointerEvents='none';
+        document.getElementById("c-v3n").style.pointerEvents='none';
+
+
+
+        instance.addEndpoint([vp, v1p, v2p, v3p], {
+            endpoint: "Dot",
+            anchor: ["Center"],
+            isSource: true,
+            isTarget: true,
+            paintStyle: { fill: "rgb(97,106,229)" },
+            connectionType: "positive",
+            maxConnections: 0,
+            connectionsDetachable: true,
+        })
+    
+        instance.addEndpoint([vn, v1n, v2n, v3n], {
+    
+            endpoint: "Dot",
+            anchor: ["Center"],
+            isSource: true,
+            isTarget: true,
+            paintStyle: { fill: "rgb(229, 97, 97)", strokeWidth: 0 },
+            connectionType: "negative",
+            connectionsDetachable: true,
+            maxConnections: 0,
+        })
+    
+        instance.addEndpoint([cvp, cv1p, cv2p, cv3p], {
+    
+            endpoint: "Dot",
+            anchor: ["Center"],
+            isSource: true,
+            isTarget: true,
+            paintStyle: { fill: "rgb(97,106,229)", strokeWidth: 2.5 },
+            connectionType: "positive",
+            connectionsDetachable: true,
+            maxConnections: 0
+        })
+    
+        instance.addEndpoint([cvn, cv1n, cv2n, cv3n], {
+    
+            endpoint: "Dot",
+            anchor: ["Center"],
+            isSource: true,
+            isTarget: true,
+            paintStyle: { fill: "rgb(229, 97, 97)", strokeWidth: 2.5 },
+            connectionType: "negative",
+            connectionsDetachable: true,
+            maxConnections: 0
+            
+        })
+    
+
+        
         if (voltageVal.length == 0) {
             r1val.disabled = false
             r2val.disabled = false
@@ -239,12 +316,12 @@ check.onclick = function MyCheck() {
     }
 
     else if (arrChk.length == 0) {
-        window.alert("Please make connections")
+        window.alert("Please make the connections");
     }
 
     else {
-        window.alert("Invalid connections!")
-        window.location.reload()
+        window.alert("Invalid connections!");
+        window.location.reload();
     }
 }
 
@@ -253,13 +330,21 @@ ps.onclick = function toggle() {
     flags5 = 1;
 
     if (state == 0) {
-        document.getElementById('power-supply').src = 'images/PowerSupplyOn.png'
+        
+        document.getElementById('power-supply').src = 'images/PowerSupplyOn.png';
         PSval.disabled = false;
-        PSdis.disabled = false;
+        PSdis.disabled = true;
         state = 1;
+        ps.style.pointerEvents='none';
+        ps.display.style.pointerEvents = 'auto';
+        r1val();
+        r2val();
+        r3val();
+
     }
+
     else if (state == 1) {
-        document.getElementById('power-supply').src = 'images/PowerSupplyOff.png'
+        document.getElementById('power-supply').src = 'images/PowerSupplyOff.png';
         PSval.disabled = true;
         PSdis.disabled = true;
         PSdis.value = 0;
@@ -271,16 +356,12 @@ ps.onclick = function toggle() {
 var x = 18;
 function updateAmmeters() {
 
-
     r1 = parseFloat(r1val.value);
     r2 = parseFloat(r2val.value);
     r3 = parseFloat(r3val.value);
     ps = parseFloat(PSval.value);
-
     var Re = r1 + (r2 * r3) / (r2 + r3);
-
     var R = parseFloat(Re);
-
     var I1 = parseFloat(ps / R);
     var I2 = parseFloat((r3 / (r2 + r3)) * I1);
     var I3 = parseFloat((r2 / (r2 + r3)) * I1);
@@ -334,28 +415,30 @@ function updateAmmeters() {
 r1val.oninput = function fill1() {
     tIR1.value = r1val.value;
     flags4 = 1;
-    ps.disabled = false
+    ps.disabled = false;
+    ps.style.pointerEvents='none';
     //updateAmmeters();
 }
 
 r2val.oninput = function fill2() {
     tIR2.value = r2val.value;
     flags4 = 1;
-    ps.disabled = false
+    ps.disabled = false;
+    ps.style.pointerEvents='none';
     //updateAmmeters();
 }
 
 r3val.oninput = function fill3() {
     tIR3.value = r3val.value;
     flags4 = 1;
-    ps.disabled = false
+    ps.disabled = false;
+    ps.style.pointerEvents = 'auto';
     //updateAmmeters();
 }
 
 PSval.oninput = function update() {
 
-    add.disabled = false
-
+    add.disabled = false;
     r1val.disabled = true;
     r2val.disabled = true;
     r3val.disabled = true;
@@ -367,10 +450,11 @@ PSval.oninput = function update() {
     }
 }
 
-add.onclick = function AddToTable() {
 
-    plot.disabled = false
+add.onclick = function AddToTable() {    
 
+    add.disabled = true;
+    plot.disabled = false;
     flags6 = flags6 + 1;
 
     let row = vtable.insertRow(index);
@@ -389,27 +473,34 @@ add.onclick = function AddToTable() {
     i3.innerHTML = ((tableArr[2].style.transform.substring(7, ndl3.style.transform.indexOf("d"))) / 9).toPrecision(3);
     index = index + 1;
 
-    voltageVal.push(voltage.innerHTML)
-    I1Val.push(i1.innerHTML)
-    I2Val.push(i2.innerHTML)
-    I3Val.push(i3.innerHTML)
+    voltageVal.push(voltage.innerHTML);
+    I1Val.push(i1.innerHTML);
+    I2Val.push(i2.innerHTML);
+    I3Val.push(i3.innerHTML);
+
+if(voltageVal.length > 5)  {
+
+ PSval.style.pointerEvents = 'none';
+
 }
 
+}
 plot.onclick = function plotVal() {
 
+    plot.disabled=true;
     flags7 = 1;
 
     if (voltageVal.length >= 6) {
-        var temp1 = document.getElementById("plotContiner")
-        var temp2 = temp1.innerHTML
-        temp1.innerHTML = temp2
+
+
+        var temp1 = document.getElementById("plotContiner");
+        var temp2 = temp1.innerHTML;
+        temp1.innerHTML = temp2;
         window.scrollTo({
             top: 750,
             left: 0,
             behavior: 'smooth'
         });
-
-
 
         new Chart("myPlot", {
             type: "line",
@@ -466,7 +557,7 @@ plot.onclick = function plotVal() {
         });
     }
     else{
-        window.alert("Please enter atleast 6 obseravtions to the table.")
+        window.alert("Please enter atleast 6 obseravtions to the table.");
     }
 }
 
@@ -474,9 +565,11 @@ prnt.onclick = function prntScr() {
     window.print()
 }
 
-function disconnect(num){
+function disconnect(num) {
+
     let nodes_list = [vp, vn, v1p, v1n, v2p, v2n, v3p, v3n, cvp, cvn, cv1p, cv1n, cv2p, cv2n, cv3p, cv3n] 
-    instance.deleteConnectionsForElement(nodes_list[num])   
+    instance.deleteConnectionsForElement(nodes_list[num]);
+
 }
 
   /*   function highlight() {
