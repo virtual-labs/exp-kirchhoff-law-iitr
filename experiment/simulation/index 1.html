@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+
         footer {
+
           text-align: center;
         /*  position: absolute;
           margin-top: 1520px;
@@ -30,9 +32,8 @@
           font-size: larger;
           
         }
+
         </style>
-
-
 </head>
 
 <body>
@@ -40,10 +41,13 @@
     <div class="container" id="pageContainer">
 
         <div class="instructions">
+
             <div class="insHeading">
+                
                 <p>Instructions</p>
 
                 <ul class="steps" id="steps">
+
                     <li id="s1"><b>STEP 1:</b>Make connections by dragging nodes from apparatus to the circuit.</li>
                         <ul>
                     <b>(a)</b>Connect power-supply to the circuit. (1-9, 2-10).<br>
@@ -67,46 +71,38 @@
                 </p>
             </div>
         </div>
-
         <div class="heading">
 
-            <p ><b> TO VERIFY KIRCHHOFF'S VOLTAGE LAW</b></p>
+            <p><b> TO VERIFY KIRCHHOFF'S VOLTAGE LAW</b></p>
 
         </div>
-
         <div class="clear"></div>
 
-
         <div class="control-panel">
-
             <div class="control-panel-buttons">
                 <p style="color: white; border-radius: 10px; border:2.5px solid black; background-color:#1e1e1e ;padding:20px, 30px , 40px, 50px"><b> ACTION BUTTONS</b></p>
                 <button id="check">CHECK</button>
-                <button id="add">ADD</button>
+                <button id="add" disabled="true" >ADD</button>
                 <button id="plot">PLOT</button>
                 <button id="reset">RESET</button>
                 <button id="print" onclick=' window.print();'>PRINT</button>
                 <!--THIS IS TO BE KEPT IN A FLEX BOX-->
             </div>
-
         </div>
         <!--CONTROL PANEL ENDS HERE-->
-
 
         <div class="sliders">
             <p style="color: white; border-radius: 10px; border:2.5px solid black; background-color:#1e1e1e; padding:20px,30px,40px,50px"><b> SLIDERS</b></p>
 
-            <input type="range" disabled="true" id="r1val" name="r1val" value="1" min="1" max="20" step="0.1">
+            <input style="margin-top: -15px;" type="range" disabled="true" id="r1val" name="r1val" value="1" min="1" max="20" step="0.1">
             <label id = "r1_label"> R<sub>1</sub>(&#8486;) </label>
          <!-- <p id = "r1_label"for="r1val"> <b> R1(&#8486;)</b> </p>  -->
 
-
-            <input type="range" disabled="true" id="r2val" name="r2val" value="1" min="1" max="20" step="0.1">
+            <input style="margin-top: -15px;" type="range" disabled="true" id="r2val" name="r2val" value="1" min="1" max="20" step="0.1">
             <label id = "r2_label" for="r2val"> R<sub>2</sub>(&#8486;)</label>
             <!-- <p id = "r2_label" for="r2val"> R2(&#8486;) </p> -->
 
-
-            <input type="range" disabled="true" id="r3val" name="r3val" value="1" min="1" max="20" step="0.1">
+            <input style="margin-top: -15px;" type="range" disabled="true" id="r3val" name="r3val" value="1" min="1" max="20" step="0.1">
             <label id = "r3_label" for="r3val"> R<sub>3</sub>(&#8486;)</label>
             <!-- <p  id = "r3_label" for="r3val"> R3(&#8486;) </p> -->
 
@@ -116,8 +112,8 @@
                 <img class="supply" id="power-supply" width="430px" height='250px' src="images/PowerSupplyOff.png"
                     alt="">
             </div>
-
             <div class="voltmeters">
+
                 <img src="images/V1.png" height="200" width="200" alt="Voltmeter" class="Voltmeter1">
 
                 <img class="pointer1" id="ndl1" height="11" width="44" src="images/Pointer.png" alt="">
@@ -130,11 +126,10 @@
 
                 <img class="pointer3" id="ndl3" height="11" width="44" src="images/Pointer.png" alt="">
 
-
             </div>
 
             <input type="range" disabled="true" id="PSval" name="PSval" value="0" min="0" max="10" step="0.1">
-            <input type="text" class="PSdisplay" id="PSdis" value="0V" disabled >
+            <input type="text" class="PSdisplay" id="PSdis" value="0V" disabled>
 
         </div>
 
@@ -158,30 +153,32 @@
         </div>
 
 
-        <div class="nodes">
+                                                                            <!-- Nodes start from here 1 -16 -->
+
+        <div class="nodes" id="node1">
             <!-- These are the Nodes. Please Declare div here if using plumbjs-->
             <button id="pow-start"
-                onclick="document.getElementById('power-supply').src='images/PowerSupplyOn.png'" disabled="true"></button>
+                onclick="document.getElementById('power-supply').src='images/PowerSupplyOn.png'"disabled="true"></button>
                 <div class="node">
-                    <button id="vp"><label onclick="disconnect(0)">1</label></button>
-                    <button id="vn"><label onclick="disconnect(1)">2</label></button>
-                    <button id="v1p"><label onclick="disconnect(2)">3</label></button>
-                    <button id="v1n"><label onclick="disconnect(3)">4</label></button>
-                    <button id="v2p"><label onclick="disconnect(4)">5</label></button>
-                    <button id="v2n"><label onclick="disconnect(5)">6</label></button>
-                    <button id="v3p"><label onclick="disconnect(6)">7</label></button>
-                    <button id="v3n"><label onclick="disconnect(7)">8</label></button>
+                    <button id="vp"><label style="margin-left: 5px; font-size:15px; width: auto;"id="label1" onclick="disconnect(0)">1</label></button>
+                    <button id="vn"><label style="margin-left: 5px;font-size:15px; width: auto;"id="label2" onclick="disconnect(1)">2</label></button>
+                    <button id="v1p"><label style="font-size:15px; width: auto;"id="label3" onclick="disconnect(2)">3</label></button>
+                    <button id="v1n"><label style="margin-left: 5px;font-size:15px; width: auto;"id="label4" onclick="disconnect(3)">4</label></button>
+                    <button id="v2p"><label style="margin-left: 5px;font-size:15px; width: auto;"id="label5" onclick="disconnect(4)">5</label></button>
+                    <button id="v2n"><label style="margin-left: 5px;font-size:15px; width: auto;"id="label6" onclick="disconnect(5)">6</label></button>
+                    <button id="v3p"><label style="font-size:15px; width: auto;"id="label7" onclick="disconnect(6)">7</label></button>
+                    <button id="v3n"><label style="margin-left: 5px;font-size:15px; width: auto;"id="label8" onclick="disconnect(7)">8</label></button>
                 </div>
                 <div class="node-circuit">
                     <!--  c- refers to the position in the circuit -->
-                    <button id="c-vp">   <label  id = "label9" onclick="disconnect(8)">9</label></button>
-                    <button id="c-vn">   <label  id = "label10" onclick="disconnect(9)">10</label></button>
-                    <button id="c-v1p">  <label  id = "label11" onclick="disconnect(10)">11</label></button>
-                    <button id="c-v1n">  <label  id = "label12" onclick="disconnect(11)">12</label></button>
-                    <button id="c-v2p">  <label  id = "label13" onclick="disconnect(12)">13</label></button>
-                    <button id="c-v2n">  <label  id = "label14" onclick="disconnect(13)">14</label></button>
-                    <button id="c-v3p">  <label  id = "label15" onclick="disconnect(14)">15</label></button>
-                    <button id="c-v3n">  <label  id = "label16" onclick="disconnect(15)">16</label></button>
+                    <button id="c-vp"><label style="margin-left: 5px;font-size:15px; width: auto;" id = "label9" onclick="disconnect(8)">9</label></button>
+                    <button id="c-vn"><label style="font-size:15px; width: auto;" id = "label10" onclick="disconnect(9)">10</label></button>
+                    <button id="c-v1p"><label style="font-size:15px; width: auto;" id = "label11" onclick="disconnect(10)">11</label></button>
+                    <button id="c-v1n"><label style="margin-left: 8px;font-size:15px; width: auto;" id = "label12" onclick="disconnect(11)">12</label></button>
+                    <button id="c-v2p"><label style="font-size:15px; width: auto;" id = "label13" onclick="disconnect(12)">13</label></button>
+                    <button id="c-v2n"><label style="font-size:15px; width: auto;" id = "label14" onclick="disconnect(13)">14</label></button>
+                    <button id="c-v3p"><label style="font-size:15px; width: auto;" id = "label15" onclick="disconnect(14)">15</label></button>
+                    <button id="c-v3n"><label style="margin-left: 9px;font-size:15px; width: auto;" id = "label16" onclick="disconnect(15)">16</label></button>
                 </div>
         </div>
         <div class="input-boxes">
@@ -189,12 +186,6 @@
             <input type="text" id='textInputR2' value="1" disabled>
             <input type="text" id='textInputR3' value="1" disabled>
         </div>
-
-
-
-
-
-        <div class="clear"></div>
 
         <div class="graph" id="plotContiner">
             <div class="graph-heading">
@@ -211,8 +202,6 @@
         <p >Copyright@2022 Virtual Labs, IIT Roorkee</p>
        <!-- <p><a href="mailto:hege@example.com">hege@example.com</a></p>  --> 
       </footer>
-
-
 
 </body>
 
