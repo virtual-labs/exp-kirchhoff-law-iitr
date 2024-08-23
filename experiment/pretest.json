@@ -1,6 +1,6 @@
 [{"question":"KVL deals with the conservation of -","answers":{"a":" Mass","b":"Momentum","c":"Charge","d":"Energy"},"correctAnswer":"d"},
 {"question":"The algebraic sum of the voltages over any closed loop is equal to -","answers":{"a":" 0V","b":"Infinity","c":"1V","d":"2V"},"correctAnswer":"a"},
-{"question":"What is the basic law that has to be followed in order to analyze the circuit?","answers":{"a":"Newton's Law","b":"Faradey's Law","c":"Ampere's Law","d":"Kirchoff's Law"},"correctAnswer":"d"},
+{"question":"What is the basic law that has to be followed in order to analyze the circuit?","answers":{"a":"Newton's Law","b":"Faraday's Law","c":"Ampere's Law","d":"Kirchoff's Law"},"correctAnswer":"d"},
 {"question":"Every __________ is a______ but every _____ is not a ______ -","answers":{"a":"Mesh, loop, loop, mesh","b":"Loop, mesh, mesh, loop","c":"Loop, mesh, loop, mesh","d":"Mesh, loop, mesh, loop"},"correctAnswer":"b"},
 {"question":"KVL is applied -","answers":{"a":"Node","b":"Mesh","c":"Loop","d":"Both loop & mesh"},"correctAnswer":"d"},
 {"question":"AC and DC both types of circuit can use kirchhoff’s law -","answers":{"a":"True","b":"False"},"correctAnswer":"a"},
