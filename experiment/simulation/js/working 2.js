@@ -61,7 +61,7 @@ var validConn = [vp, cvp, vn, cvn, v1p, cv1p, v1n, cv1n, v2p, cv2p, v2n, cv2n, v
 var arrChk = []
 var arrChkStore = []
 var tableArr = [ndl1, ndl2, ndl3]
-var x = 9;                          //  var x = 27.00027;
+var x = 9;  //  var x = 27.00027;
 
 var state = 0;
 

@@ -4,3 +4,5 @@
 2) J.B. Gupta, "A Course in Electrical and Electronic Measurements & Instrumentation",  S.K. Kataria & Sons, Fourteenth edition, 2014<br>
 3) H.S. Kalsi, "Electronic Instrumentation and Measurements", Vol. 2, McGraw-Hill, Fourth edition, 2019<br>
 4) A.K. Sawhney, "A Course in ELECTRICAL AND ELECTRONIC MEASUREMENTS AND INSTRUMENTATION", Shree Hari Publications, 2021<br>
+5) A. Chakrabarti, "Circuit Theory: Analysis and Synthesis", Dhanpat Rai & Co., 2020<br>
+6) Charles K. Alexander, Matthew N. O. Sadiku, "Fundamentals of Electric Circuits", McGraw-Hill, 6th Edition<br>

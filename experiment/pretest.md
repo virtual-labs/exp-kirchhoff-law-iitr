@@ -1,74 +1,75 @@
-## Pre test
+## Pre Test
+
 #### Please attempt the following questions
 
-<b>Q1. KVL deals with the conservation of-</b><br>
+### Note- Reference books are available in the reference section.
 
-A   Mass<br>
-B   Momentum<br>
-C   Charge<br>
-D   Energy<br><br>
+<div align="justify"style=font-size:18px >
 
-<b>Q2. The algebraic sum of the voltages over any closed loop is equal to-</b><br>
+Q1. A wattmeter is used to measure _____.
 
-A   0V <br>
-B   Infinity<br>
-C   1V<br>
-D   2V<br><br>
+A   Active Power</br>
+B   Reactive Power</br>
+C   Apparent Power</br>
+D   Any of the above</br>
 
-<b>Q3. What is the basic law that has to be followed in order to analyze the circuit?</b><br>
+Q2. A three phase, 400 V load has power factor 0.6 lagging. The two wattmeters read a total input power of 20 kW. The reading of each wattmeter will be - 
 
-A    Newton's Law<br>
-B  Faraday's Law<br>
-C   Ampere's Law<br>
-D  Kirchhoff's Law<br><br>
+A   17.689 kW, 2.302 kW</br>
+B   14.655 kW, 6.102 kW</br>
+C   11.539 kW, 12.442 kW</br>
+D   9.575 kW, 9.575 kW</br>
 
-<b>Q4. Every __________ is a______ but every _____ is not a ______-</b><br>
+Q3. In a two wattmeter power, for all ________ power factors between 0-0.5, one meter shows _______ reading and second wattmeter shows ______ reading.
 
-A  Mesh, loop, loop, mesh<br>
-B  Loop, mesh, mesh, loop<br>
-C   Loop, mesh, loop, mesh<br>
-D   Mesh, loop, mesh, loop<br><br>
+A   Lagging, positive, positive</br>
+B   Leading, positive, negative</br>
+C   Lagging, positive, negative</br>
+D   Leading, positive, positive</br>
 
-<b>Q5. KVL is applied-</b><br>
+Q4. Two wattmeter method is applicable for balanced as well as unbalanced load.
 
-A  Node<br>
-B  Mesh<br>
-C   Loop<br>
-D  Both loop & mesh<br><br>
+A   True</br>
+B   False</br>
 
-<b>Q6. AC and DC both types of circuit can use kirchhoff’s law-</b>
+Q5. Two wattmeter method applicable for three phase, 4 wire system.
 
-A   True<br>
-B   False <br>
+A   True</br>
+B   False</br>
 
-<b>Q7. KVL is generally used for-</b><br>
+Q6. In a 3-phase power measurement by two wattmeter method, both the wattmeters had identical readings. The power factor of the load was -
 
-A  Voltage<br>
-B  Current<br>
-C  Resistance<br>
-D  Power<br><br>
+A   Unity</br>
+B   0.8 lagging</br>
+C   0.8 leading</br>
+D   zero</br>
 
-<b>Q8.  Find the value of currents I1 & I2-</b><br>
+Q7. In a 3-phase power measurement by two wattmeter method the reading of one of the wattmeter was zero. The power factor of the load must be -
 
-![](images/v1.png)
+A   Unity</br>
+B   0.5</br>
+C   0.3</br>
+D   Zero</br>
 
-A  0.3A,0.1A<br>
-B  -0.1A,-0.3A<br>
-C  -0.3A,-0.1A<br>
-D  0.1A,0.2A<br><br>
+Q8. How many coils are there in wattmeter?
 
-<b>Q9. Potential difference in a circuit is also called as____?</b> <br>
+A   3</br>
+B   4</br>
+C   1</br>
+D   2</br>
 
-A  Voltage difference <br>
-B Electric pressure <br>
-C  Electric tension <br>
-D All of the above <br><br>
+Q9. While measuring power by two wattmeter method, the phase voltage is 3 V whereas the phase current is 0.5A. If the angle between phase current and phase voltage is 30 degrees, the total power consumed by the load will be -
 
-<b>Q10. Calculate the voltage across 10 ohm resistor-</b><br>
+A   3.125 W</br>
+B   1.11 W</br>
+C   2.25 W</br>
+D   2.57 W</br>
 
-![](images/v2.png)
+Q10. The power in an unbalance 3-phases 4-wire circuit can be measured by using a method.
 
-A  12V<br>
-B   4V<br>
-C  10V<br>
-D   0V<br><br>
+A   4 Wattmeter</br>
+B   3 Wattmeter</br>
+C   2 Wattmeter</br>
+D   1 Wattmeter</br>
+
+</div>

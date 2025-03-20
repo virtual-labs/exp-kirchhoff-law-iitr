@@ -5,6 +5,9 @@
 &nbsp; &nbsp;**(a)** Connect power supply to the circuit (1-9, 2-10). <br>
 &nbsp; &nbsp;**(b)** Connect voltmeter (3-11, 4-12) and (5-13, 6-14) and (7-15, 8-16) or you can connect any voltmeter to any resistance in circuit.<br>
 &nbsp; &nbsp;**(c)** Click on the label to delete all the connections for the corresponding nodes. <br><br>
+
+<img src="simulation/images/Kirchoff&apos;s voltage law.png" height="325" width="600"/> <br/>
+
 **STEP 2 :** Check your connections by clicking on the <b>‘CHECK’</b>  button.<br><br>
 **STEP 3 :** Set the values of resistances R1, R2 & R3 by adjusting the sliders on left, these values will remain constant throughout the experiment. <br><br>
 **STEP 4 :** Click the <b>‘Power’</b> button to turn on the power supply.  <br><br>
@@ -23,6 +26,9 @@
 &nbsp; &nbsp; **(a)** Connect power supply to the circuit (1-9, 2-10). <br>
 &nbsp; &nbsp; **(b)** Connect ammeters (3-11, 4-12) and (5-13, 6-14) and (7-15, 8-16) or you can connect any ammeter to any resistance in circuit.<br>
 &nbsp; &nbsp; **(c)** Click on the label to delete all the connections for the corresponding nodes. <br><br>
+
+<img src="simulation/images/Kirchoff&apos;s current law .png" height="325" width="600"/> <br/>
+
 **STEP 2 :** Check your connections by clicking on the <b>‘CHECK’</b> button. <br><br>
 **STEP 3 :** Set the values of resistances R1, R2 & R3 by adjusting the sliders on left, these values will remain constant throughout the experiment. <br><br>
 **STEP 4 :** Click the <b>‘Power’</b> button to turn on the power supply.  <br><br>
