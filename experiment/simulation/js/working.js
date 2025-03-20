@@ -468,9 +468,9 @@ add.onclick = function AddToTable() {
     SNo.innerHTML = index;
     voltage.innerHTML = PSval.value;
 
-    i1.innerHTML = ((tableArr[0].style.transform.substring(7, ndl1.style.transform.indexOf("d"))) / 9).toPrecision(3);
-    i2.innerHTML = ((tableArr[1].style.transform.substring(7, ndl2.style.transform.indexOf("d"))) / 9).toPrecision(3);
-    i3.innerHTML = ((tableArr[2].style.transform.substring(7, ndl3.style.transform.indexOf("d"))) / 9).toPrecision(3);
+    i1.innerHTML = ((tableArr[0].style.transform.substring(7, ndl1.style.transform.indexOf("d"))) / 9).toPrecision(2);
+    i2.innerHTML = ((tableArr[1].style.transform.substring(7, ndl2.style.transform.indexOf("d"))) / 9).toPrecision(2);
+    i3.innerHTML = ((tableArr[2].style.transform.substring(7, ndl3.style.transform.indexOf("d"))) / 9).toPrecision(2);
     index = index + 1;
 
     voltageVal.push(voltage.innerHTML);
@@ -492,7 +492,6 @@ plot.onclick = function plotVal() {
 
     if (voltageVal.length >= 6) {
 
-
         var temp1 = document.getElementById("plotContiner");
         var temp2 = temp1.innerHTML;
         temp1.innerHTML = temp2;
@@ -503,7 +502,7 @@ plot.onclick = function plotVal() {
         });
 
         new Chart("myPlot", {
-            type: "line",
+          
 
             data: {
                 labels: voltageVal,
@@ -512,6 +511,7 @@ plot.onclick = function plotVal() {
                     fill: false,
                     lineTension: 0.3,
                     borderColor: "blue",
+                    type:'line',
                     data: I1Val
                 },
                 {
@@ -519,14 +519,17 @@ plot.onclick = function plotVal() {
                     fill: false,
                     lineTension: 0.3,
                     borderColor: "green",
+                    type:'line',
                     data: I2Val
                 },
                 {
                     label: "V3",
                     fill: false,
                     lineTension: 0.3,
+                    width:5,
                     borderColor: "red",
-                    data: I3Val,
+                    line:'dot',
+                    data: I3Val
 
                 }]
             },

@@ -3,37 +3,43 @@
 
 This law is also called “kirchhoff’s second law” <br>
 
-When the current passes through the resistor, there is a loss in energy and therefore a voltage drop. Kirchhoff’s voltage law. <br>
+When the current passes through the resistor, there is a loss of power, resulting in a voltage drop.<br>
 
-<center> $ ∑Vi = 0  $ </center><br>
+<center>  
 
-<center><img src="images/Picture1_pro.png"></center> <center>Fig. 1: Circuit Diagram to demonstrate Kirchoff's Voltage law</center> <br>
+$ \sum V_i = 0 $
+
+</center>
+
+<center><img src="images/Picture1.png"></center> <center>Fig. 1: Circuit Diagram to demonstrate Kirchoff's Voltage law</center> <br>
 
 In any circuit, voltage drops across the resistors have opposite polarities to the source polarity.<br> 
-Remember that when traveling around the circuit to apply Kirchhoff's Voltage Law, be sure you are always going in the same direction (clockwise or counterclockwise) to determine whether a given element represents an increase or decrease in the voltage. If you begin jumping around, moving in different directions, your equation will be When crossing a resistor, the voltage change is determined by the ohm’s law…  <br>
+As you move around the loop to apply Kirchhoff's Voltage Law, be sure you are always going in the same direction (clockwise or counterclockwise) to determine whether a given element represents an increase or decrease in the voltage. If you begin jumping around, moving in different directions, your equation will be when passing through a resistor, the voltage change is determined by the ohm’s law… <br>
 
-<center> $ V=I⋅R $ </center>
+<center>
 
-where I is the value of the current and R is the resistance of the resistor. Crossing in the same direction as the current means the voltage goes down, so its value is negative. When crossing a resistor in the direction opposite the current, the voltage value is positive, so it is increasing. <br>
+  $ V = I \cdot R $
+  </center>
+
+where I is the value of the current and R is the resistance of the resistor. Crossing in the same direction as the current means the voltage goes down, so its value is negative. When passing through a resistor in the direction opposite to the current, the voltage value is positive, so it is increasing. <br>
 
 In given figure there are two loop. Acc. to Kirchhoff’s voltage law…….<br>
 
-<center> $ V − V_{R1} − V_{R3} = 0  $  </center>
+<center> 
+
+$ V − V_{R1} − V_{R3} = 0  $  </center>
              
-<center> $  V −  i1R1 − i3R3 = 0 ..........(1) $ </center>
+<center> 
 
-<center> $ V_{R2} + ( − V_ {R3}) = 0  $ </center>
+$  V −  i1R1 − i3R3 = 0 ..........(1) $ </center>
 
-<center> $ i2R2 + (− i3R3) = 0............(2)  $  </center>
+<center> 
 
-#### Advantages of Kirchhoff’s Law <br>
-1. Kirchhoff’s Law can easily calculate unknown currents and voltages.<br>
+$ V_{R2} + ( − V_ {R3}) = 0  $ </center>
 
-2. The analysis and simplification of complex closed-loop circuits become manageable. <br>
+<center> 
 
-#### Disadvantages of Kirchhoff’s Law <br>
-
-1. Kirchhoff’s rules work on the assumption that the closed loop has no fluctuating magnetic fields. Under the influence of a fluctuating magnetic field, electric fields and electromotive force can be created, causing in Kirchhoff’s rule to be broken. <br>
+$ i2R2 + (− i3R3) = 0............(2)  $  </center>
 
 ### Introduction:
 
@@ -45,11 +51,13 @@ This law represents a mathematical statement of the fact that charge cannot accu
 
 Summarizing, <br>
 
-“The algebraic sum of all currents entering and exiting a node must equal zero” Mathematically,  <br>
+“The algebraic sum of all currents entering and leaving a node must equal zero” Mathematically,  <br>
 
-<center> $ ∑ I_{IN} = ∑ I_{OUT}  $ </center>
+<center> 
 
-KCL can be viewed as an extension of the conservation of charge, since charge is the product of current and the time the current has been flowing in the circuit.
+$ ∑ I_{IN} = ∑ I_{OUT}  $ </center>
+
+Kirchoff's current law is based on the law of conservation of charge which is the product of current and the time for which the current has been flowing in the circuit.
 Kirchhoff’s Current Law is applicable to any lumped parameter electrical circuit. <br>
 
 ### CIRCUIT DIAGRAM:
@@ -58,9 +66,12 @@ Kirchhoff’s Current Law is applicable to any lumped parameter electrical circu
 
 Applying KCL at node, <br>
 
-<center> $ −I1 + I2 + I3=0 $ </center>
+<center>
 
-<center> $ I1 = I2 + I3  $ </center>
+$-I_1 + I_2 + I_3 = 0$  
+$I_1 = I_2 + I_3$
+
+</center>
 
 In the above equation, the left-hand side represents the sum of entering currents, whereas the right-hand side represents the sum of leaving currents. Here we will consider positive sign when current leaves a node and negative sign when it enters a node. Similarly, you can consider negative sign when the current leaves a node and positive sign when it enters a node. In both cases, the result will be same. KCL is independent of the nature of network elements that are connected to a node. <br>
 
@@ -68,7 +79,7 @@ In the above equation, the left-hand side represents the sum of entering current
 
 1. Kirchhoff’s Law can easily calculate unknown currents and voltages.
 
-2. The analysis and simplification of complex closed-loop circuits become manageable.
+2. The analysis and simplification of complex closed-loop circuits become simple.
 
 ### Disadvantages of Kirchhoff’s Law 
 
