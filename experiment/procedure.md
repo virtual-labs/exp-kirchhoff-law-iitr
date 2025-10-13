@@ -1,6 +1,6 @@
-### Steps to perform experiment
+### Steps to perform Kirchhoff's Voltage Law
 <br>
-  
+
 **STEP 1 :** Make connections by dragging nodes from apparatus to the circuit.<br><br>
 &nbsp; &nbsp;**(a)** Connect power supply to the circuit (1-9, 2-10). <br>
 &nbsp; &nbsp;**(b)** Connect voltmeter (3-11, 4-12) and (5-13, 6-14) and (7-15, 8-16) or you can connect any voltmeter to any resistance in circuit.<br>
@@ -19,7 +19,7 @@
 **STEP 10 :** Click on <b>‘RESET’</b> button to refresh the page.  <br> <br>
 
 
-### Steps to perform experiment
+### Steps to perform Kirchhoff's Current Law
 <br>
   
 **STEP 1 :** Make connections by dragging nodes from apparatus to the circuit.<br>   

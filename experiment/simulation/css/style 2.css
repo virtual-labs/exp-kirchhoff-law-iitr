@@ -20,7 +20,7 @@ body {
 
 .container .heading {
     width: 1400px;
-    height: 40px;
+    height: 50px;
     background-color: #1e1e1e;
     margin: 0px auto;
     border-radius: 10px;
@@ -31,7 +31,11 @@ body {
     font-family: 'Zacbel X', sans-serif;
     font-size: 30px;
     color: white;
-    padding-top: 6px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
 }
 
@@ -324,8 +328,8 @@ body {
 #vp {
     position: relative;
     background-color: #1e1e1e9e;
-    top: -57.5em;
-    right: 46.4em;
+    top: -57em;
+    right: 46.3em;
     height: 18px;
     width: 18px;
 }
@@ -333,7 +337,7 @@ body {
 #vn {
     position: relative;
     background-color: #2b2a2aa1;
-    top: -57.5em;
+    top: -56.9em;
     right: 44.4em;
     height: 18px;
     width: 18px;
@@ -342,7 +346,7 @@ body {
 #v1p {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.5em;
+    top: -57.2em;
     right: 28em;
     height: 15px;
     width: 15px;
@@ -353,7 +357,7 @@ body {
 #v1n {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.5em;
+    top: -57.2em;
     right: 25.2em;
     height: 15px;
     width: 15px;
@@ -364,7 +368,7 @@ body {
 #v2p {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.5em;
+    top: -57.2em;
     right: 18em;
     height: 15px;
     width: 15px;
@@ -375,7 +379,7 @@ body {
 #v2n {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.5em;
+    top: -57.2em;
     right: 15.2em;
     height: 15px;
     width: 15px;
@@ -385,7 +389,7 @@ body {
 #v3p {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.5em;
+    top: -57.2em;
     right: 8.5em;
     height: 15px;
     width: 15px;
@@ -396,7 +400,7 @@ body {
 #v3n {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.5em;
+    top: -57.2em;
     right: 5.8em;
     height: 15px;
     width: 15px;
@@ -410,7 +414,7 @@ body {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -40.3em;
+    top: -40em;
     right: 48.3em;
 }
 
@@ -418,7 +422,7 @@ body {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -37.2em;
+    top: -36.9em;
     right: 50em;
 
 }
@@ -427,8 +431,8 @@ body {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47.1em;
-    right: 44.15em;
+    top: -46.8em;
+    right: 44.2em;
 
 
 
@@ -439,8 +443,8 @@ body {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47.1em;
-    right: 41.45em;
+    top: -46.8em;
+    right: 41.5em;
 
 
 
@@ -450,20 +454,16 @@ body {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -41.1em;
+    top: -40.8em;
     right: 29.2em;
-
-
-
-
 }
 
 #c-v2n {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -38.4em;
-    right: 30.8em;
+    top: -38.1em;
+    right: 30.9em;
 
 
 
@@ -473,8 +473,8 @@ body {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47.1em;
-    right: 16.25em;
+    top: -46.8em;
+    right: 16.3em;
 
 
 
@@ -484,8 +484,8 @@ body {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47.1em;
-    right: 14.3em;
+    top: -46.7em;
+    right: 14.4em;
 
 
 
