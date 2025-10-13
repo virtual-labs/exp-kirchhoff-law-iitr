@@ -480,54 +480,48 @@ add.onclick = function AddToTable() {
     }
 }
 
+let myChart; // store chart instance globally
+
 plot.onclick = function plotVal() {
-
-
-    plot.disabled=true;
-
+    plot.disabled = true;
     flags7 = 1;
 
     if (voltageVal.length >= 6) {
+        const ctx = document.getElementById("myPlot").getContext('2d');
 
-        var temp1 = document.getElementById("plotContiner")
-        var temp2 = temp1.innerHTML
-        temp1.innerHTML = temp2
-        
-        window.scrollTo({
-            top: 750,
-            left: 0,
-            behavior: 'smooth'
-        });
+        // Destroy previous chart if it exists
+        if (myChart) {
+            myChart.destroy();
+        }
 
-        new Chart("myPlot", {
+        myChart = new Chart(ctx, {
             type: "line",
             data: {
                 labels: voltageVal,
-                datasets: [{
-                    label: "I1",
-                    fill: false,
-                    lineTension: 0.3,
-                    borderColor: "blue",
-                    data: I1Val
-                },
-                {
-                    label: "I2",
-                    fill: false,
-                    lineTension: 0.3,
-                    borderColor: "green",
-                    data: I2Val
-                },
-                {
-                    label: "I3",
-                    fill: false,
-                    lineTension: 0.3,
-                    borderColor: "orange",
-                    data: I3Val,
-                    legend: "I3"
-
-                }]
+                datasets: [
+                    {
+                        label: "I1",
+                        fill: false,
+                        tension: 0.3,
+                        borderColor: "blue",
+                        data: I1Val
+                    },
+                    {
+                        label: "I2",
+                        fill: false,
+                        tension: 0.3,
+                        borderColor: "green",
+                        data: I2Val
+                    },
+                    {
+                        label: "I3",
+                        fill: false,
+                        tension: 0.3,
+                        borderColor: "orange",
+                        data: I3Val
+                    }
+                ]
             },
-
             options: {
                 scales: {
                     y: {
@@ -535,7 +529,7 @@ plot.onclick = function plotVal() {
                         title: {
                             display: true,
                             text: "Current(A)",
-                            color:"black"
+                            color: "black"
                         }
                     },
                     x: {
@@ -544,17 +538,17 @@ plot.onclick = function plotVal() {
                         title: {
                             display: true,
                             text: "Voltage(Power Supply)",
-                            color:"black"
+                            color: "black"
                         }
                     }
                 }
             }
         });
+    } else {
+        window.alert("Please enter at least 6 observations to the table.");
     }
-    else{
-        window.alert("Please enter atleast 6 obseravtions to the table.")
-    }
-}
+};
+
 
 prnt.onclick = function prntScr() {
     window.print()

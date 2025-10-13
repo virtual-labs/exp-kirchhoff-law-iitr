@@ -278,8 +278,8 @@ z-index: 1;
 
 #vp {
     position: relative;
-    background-color: #1e1e1e9e;
-    top: -57.5em;
+
+    top: -56em;
     right: 46.4em;
     height: 18px;
     width: 18px;
@@ -288,7 +288,8 @@ z-index: 1;
 #vn {
     position: relative;
     background-color: #2b2a2aa1;
-    top: -57.5em;
+  
+    top: -56em;
     right: 44.4em;
     height: 18px;
     width: 18px;
@@ -297,7 +298,7 @@ z-index: 1;
 #v1p {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.1em;
+     top: -56em;
     right: 28em;
     height: 15px;
     width: 15px;
@@ -308,7 +309,7 @@ z-index: 1;
 #v1n {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.1em;
+    top: -56em;
     right: 25.2em;
     height: 15px;
     width: 15px;
@@ -317,7 +318,7 @@ z-index: 1;
 #v2p {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.1em;
+     top: -56em;
     right: 18em;
     height: 15px;
     width: 15px;
@@ -326,7 +327,7 @@ z-index: 1;
 #v2n {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.1em;
+    top: -56em;
     right: 15.2em;
     height: 15px;
     width: 15px;
@@ -335,7 +336,7 @@ z-index: 1;
 #v3p {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.1em;
+    top: -56em;
     right: 8.5em;
     height: 15px;
     width: 15px;
@@ -344,7 +345,7 @@ z-index: 1;
 #v3n {
     position: relative;
     background-color: #2b2a2ac8;
-    top: -57.1em;
+    top: -56em;
     right: 5.7em;
     height: 15px;
     width: 15px;
@@ -354,7 +355,7 @@ z-index: 1;
     position: relative;
     height: 18px;
     width: 18px;
-    top: -40.8em;
+    top: -40.2em;
     right: 48.2em;
 }
 
@@ -362,7 +363,7 @@ z-index: 1;
     position: relative;
     height: 18px;
     width: 18px;
-    top: -37.7em;
+    top: -37.2em;
     right: 50em;
 
 }
@@ -371,7 +372,7 @@ z-index: 1;
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47.6em;
+    top: -47.1em;
     right: 44.2em;
 }
 
@@ -379,15 +380,15 @@ z-index: 1;
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47.6em;
+    top: -47.1em;
     right: 34.9em;
 }
 
 #c-v2p {
-    position: relative;
+    position:relative;
     height: 18px;
     width: 18px;
-    top: -41.7em;
+    top: -41.3em;
     right: 29.4em;
 }
 
@@ -395,15 +396,15 @@ z-index: 1;
     position: relative;
     height: 18px;
     width: 18px;
-    top: -31.3em;
-    right: 31em
+    top: -30.9em;
+    right: 31.02em
 }
 
 #c-v3p {
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47.6em;
+    top: -47.1em;
     right: 25.4em;
 }
 
@@ -411,7 +412,7 @@ z-index: 1;
     position: relative;
     height: 18px;
     width: 18px;
-    top: -47.5em;
+    top: -47.1em;
     right: 16em;
 }
 
@@ -719,10 +720,6 @@ border-radius: 2px;
 .node button label{
     transform: translate(-4px, 20px);
 }
-.nodes button{
-    transform: translate(-1px, -8px);
-}
-
 
 #label9,#label10{
     transform: translate(-28px,-8px);
