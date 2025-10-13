@@ -82,7 +82,7 @@
                 <p style=" color: white; border-radius: 10px; border:2.5px solid black; background-color:#1e1e1e; padding:20px,30px,40px,50px"><b> ACTION BUTTONS</b></p>
                 <button id="check">CHECK</button>
                 <button id="add" disabled="true" >ADD</button>
-                <button id="plot">PLOT</button>
+                <button id="plot" disabled="true">PLOT</button>
                 <button id="reset">RESET</button>
                 <button id="print" onclick=' window.print();'>PRINT</button>
                 <!--THIS IS TO BE KEPT IN A FLEX BOX-->
@@ -92,20 +92,19 @@
         <!--CONTROL PANEL ENDS HERE-->
 
 
-        <div class="sliders">
-            <p style=" color: white; border-radius: 10px; border:2.5px solid black; background-color:#1e1e1e;; padding:20px,30px,40px,50px"><b> SLIDERS</b></p>
+         <div class="sliders">
+                                
+            <p style="color: white; border-radius: 10px; border:2.5px solid black; background-color:#1e1e1e; padding:20px,30px,40px,50px"><b> SLIDERS</b></p>
 
-            <input type="range" disabled="true" id="r1val" name="r1val" value="1" min="1" max="20" step="0.1">
-            <label style="color:black" id = "r1_label"for="r1val">R<sub>1</sub>(&#8486;) </label>
+            <div style="margin-left: 8px;">
+                   <input type="range" disabled="true" id="r1val" name="r1val" value="1" min="1" max="20" step="0.1">
+                   <label style="padding-left: 40px; margin-left: -100px;  " for="R1"><b>R</b><sub><b>1</b></sub><b>(&#8486;)</b></label>
 
-
-            <input type="range" disabled="true" id="r2val" name="r2val" value="1" min="1" max="20" step="0.1">
-            <label id = "r2_label" for="r2val">R<sub>2</sub>(&#8486;)</label>
-
-
-            <input type="range" disabled="true" id="r3val" name="r3val" value="1" min="1" max="20" step="0.1">
-            <label id = "r3_label" for="r3val" >R<sub>3</sub>(&#8486;)</label>
-
+                   <input type="range" disabled="true" id="r2val" name="r2val" value="1" min="1" max="20" step="0.1">
+                   <label style="padding-left: 40px; margin-left: -100px;" for="R2"><b>R</b><sub><b>2</b></sub><b>(&#8486;)</b></label>
+                    <input type="range" disabled="true" id="r3val" name="r3val" value="1" min="1" max="20" step="0.1">
+                   <label style="padding-left: 40px; margin-left: -100px;" for="R3"><b>R</b><sub><b>3</b></sub><b>(&#8486;)</b></label>
+            </div>
         </div>
         <div class="meters">
             <div class="power-supply">
@@ -198,13 +197,13 @@
                 <p style="color: white; padding-top: 16px; margin-top: 50px; margin-left: 250px; font-size: 30px;"><b> GRAPH</b> </p>
                 </div>
                 <div class="chart-container">
-                <canvas id="myPlot" class="MyCanvas" height = "600" width = "1000">
+                <canvas id="myPlot" class="MyCanvas" height = "637" width = "1000">
 
                 </canvas>
                 </div>
     </div>
     <footer>
-        <p >Copyright@2022 Virtual Labs, IIT Roorkee</p>
+        <p >&copy; 2022 Virtual Labs, IIT Roorkee</p>
        <!-- <p><a href="mailto:hege@example.com">hege@example.com</a></p>  --> 
       </footer>
 
